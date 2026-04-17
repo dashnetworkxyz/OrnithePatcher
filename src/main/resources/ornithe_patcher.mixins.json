@@ -18,6 +18,8 @@
     "bugfixes.gui.BookEditScreenMixin",
     "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
     "bugfixes.modelfixes.PlayerModelMixin_FixedTransformations",
+    "bugfixes.modelfixes.SkeletonModelMixin_FixedHeldItemTransformations",
+    "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap"
   ],
   "injectors": {
