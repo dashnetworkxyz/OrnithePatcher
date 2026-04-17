@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes.mousebindfix;
+package club.sk1er.patcher.mixins.bugfixes;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.inventory.menu.InventoryMenuScreen;

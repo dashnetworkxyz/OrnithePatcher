@@ -20,7 +20,7 @@
     "bugfixes.modelfixes.PlayerModelMixin_FixedTransformations",
     "bugfixes.modelfixes.SkeletonModelMixin_FixedHeldItemTransformations",
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
-    "bugfixes.mousebindfix.InventoryMenuScreen_MouseBindFix",
+    "bugfixes.InventoryMenuScreen_MouseBindFix",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap"
   ],
   "injectors": {
