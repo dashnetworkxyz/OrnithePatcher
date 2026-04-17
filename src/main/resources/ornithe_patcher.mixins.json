@@ -11,9 +11,9 @@
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
     "bugfixes.crashes.BufferBuilderMixin_ResolveCrash",
     "bugfixes.crashes.GameOptionsMixin_ResolveCrash",
-    "bugfixes.crashes.GuiScreenMixin_ResolveCrash",
     "bugfixes.crashes.MultiplayerServerListWidgetMixin_ResolveCrash",
     "bugfixes.crashes.ResourcePacksMixin_ResolveCrash",
+    "bugfixes.crashes.ScreenMixin_ResolveCrash",
     "bugfixes.crashes.ServerListEntryWidgetMixin_ResolveCrash",
     "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap"

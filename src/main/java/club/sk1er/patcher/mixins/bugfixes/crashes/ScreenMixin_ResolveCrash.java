@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Screen.class)
-public class GuiScreenMixin_ResolveCrash {
+public class ScreenMixin_ResolveCrash {
 
     @Shadow
     protected Minecraft minecraft;
