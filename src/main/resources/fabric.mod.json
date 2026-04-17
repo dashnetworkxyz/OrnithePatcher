@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "ornithe_patcher",
+	"version": "${version}",
+	"name": "Ornithe Patcher",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"MasterDash5"
+	],
+	"contact": {
+		"sources": "https://github.com/dashnetworkxyz/OrnithePatcher"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/ornithe_patcher/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client-init": [
+			"xyz.dashnetwork.ornithepatcher.OrnithePatcher"
+		]
+	},
+	"mixins": [
+		"ornithe_patcher.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "1.8.9",
+		"osl-entrypoints": ">=0.4.0"
+	}
+}

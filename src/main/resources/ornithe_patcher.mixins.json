@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "club.sk1er.patcher.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "bugfixes.crashes.LivingEntityMixin_ResolveCrash",
+    "bugfixes.crashes.NbtCompoundMixin_FailFast"
+  ],
+  "client": [
+    "bugfixes.GuiSoundsScreenMixin_PacketSpam",
+    "bugfixes.crashes.BufferBuilderMixin_ResolveCrash",
+    "bugfixes.crashes.GameOptionsMixin_ResolveCrash",
+    "bugfixes.crashes.GuiScreenMixin_ResolveCrash",
+    "bugfixes.crashes.MultiplayerServerListWidgetMixin_ResolveCrash",
+    "bugfixes.crashes.ResourcePacksMixin_ResolveCrash",
+    "bugfixes.crashes.ServerListEntryWidgetMixin_ResolveCrash",
+    "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
+    "features.MinecraftMixin_DebugCreativeSpectatorSwap"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
