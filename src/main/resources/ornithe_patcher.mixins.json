@@ -15,6 +15,7 @@
     "bugfixes.crashes.ResourcePacksMixin_ResolveCrash",
     "bugfixes.crashes.ScreenMixin_ResolveCrash",
     "bugfixes.crashes.ServerListEntryWidgetMixin_ResolveCrash",
+    "bugfixes.gui.BookEditScreenMixin",
     "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap"
   ],
