@@ -10,7 +10,7 @@ public final class OrnithePatcher implements ClientModInitializer {
 
 	@Override
 	public void initClient() {
-
+		PatcherConfig.initialize();
 	}
 
 }
