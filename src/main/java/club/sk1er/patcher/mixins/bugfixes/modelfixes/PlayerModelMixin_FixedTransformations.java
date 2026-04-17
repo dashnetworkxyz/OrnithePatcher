@@ -17,7 +17,7 @@ public abstract class PlayerModelMixin_FixedTransformations extends HumanoidMode
 
     @ModifyConstant(method = "<init>", constant = @Constant(floatValue = 2.5F))
     private float patcher$fixAlexArmHeight(float original) {
-        return PatcherConfig.FIXED_ALEX_ARMS.get() ? 2.0F : original;
+        return /*PatcherConfig.FIXED_ALEX_ARMS.get()*/true ? 2.0F : original; // TODO: fix config
     }
 
     /**
