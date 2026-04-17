@@ -17,6 +17,7 @@
     "bugfixes.crashes.ServerListEntryWidgetMixin_ResolveCrash",
     "bugfixes.gui.BookEditScreenMixin",
     "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
+    "bugfixes.modelfixes.PlayerModelMixin_FixedTransformations",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap"
   ],
   "injectors": {
