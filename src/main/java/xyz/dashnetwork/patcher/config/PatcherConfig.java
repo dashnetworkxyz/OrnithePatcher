@@ -12,20 +12,18 @@ import java.nio.file.Files;
 
 public final class PatcherConfig {
 
-    private PatcherConfig() {}
-
     private static File file;
     private static ConfigOptions options;
 
-    public static void init(File directory) {
+    public PatcherConfig(File directory) {
         file = new File(directory, "optionspatcher.json");
     }
 
-    public static ConfigOptions options() {
+    public ConfigOptions options() {
         return options;
     }
 
-    public static void load() {
+    public void load() {
         if (!file.exists()) {
             options = new ConfigOptions();
             return;
@@ -34,18 +32,18 @@ public final class PatcherConfig {
         try (BufferedReader reader = Files.newBufferedReader(file.toPath())) {
             options = new Gson().fromJson(reader, ConfigOptions.class);
         } catch (IOException exception) {
-            Patcher.LOGGER.error("Failed to load options", exception);
+            Patcher.get().logger().error("Failed to load options", exception);
         }
     }
 
-    public static void save() {
+    public void save() {
         if (options == null)
             return;
 
         try (BufferedWriter writer = Files.newBufferedWriter(file.toPath(), StandardCharsets.UTF_8)) {
             new Gson().toJson(file.toPath(), writer);
         } catch (IOException exception) {
-            Patcher.LOGGER.error("Failed to save options", exception);
+            Patcher.get().logger().error("Failed to save options", exception);
         }
     }
 

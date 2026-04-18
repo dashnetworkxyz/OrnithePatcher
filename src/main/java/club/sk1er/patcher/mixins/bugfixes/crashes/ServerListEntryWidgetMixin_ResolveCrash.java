@@ -27,7 +27,7 @@ public abstract class ServerListEntryWidgetMixin_ResolveCrash {
         try {
             loadServerIcon();
         } catch (Exception exception) {
-            Patcher.LOGGER.error("Failed to prepare server icon, setting to default.", exception);
+            Patcher.get().logger().error("Failed to prepare server icon, setting to default.", exception);
             entry.setIcon(null);
         }
     }

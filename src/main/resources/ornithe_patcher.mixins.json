@@ -8,6 +8,6 @@
   },
   "client": [
     "MinecraftMixin_DebugCreativeSpectatorSwap",
-    "MinecraftMixin_PatcherConfigSetup"
+    "MinecraftMixin_PatcherEntrypoint"
   ]
 }
