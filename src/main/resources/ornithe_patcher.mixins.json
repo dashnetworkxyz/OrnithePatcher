@@ -7,7 +7,14 @@
     "defaultRequire": 1
   },
   "client": [
+    "GameOptionsMixin_AdjustOptions",
     "MinecraftMixin_DebugCreativeSpectatorSwap",
-    "MinecraftMixin_PatcherEntrypoint"
+    "MinecraftMixin_PatcherEntrypoint",
+    "realms.OptionsScreenMixin_DisableRealms",
+    "realms.RealmsBridgeMixin_DisableRealms",
+    "realms.TitleScreenMixin_DisableRealms",
+    "twitch.GameOptionsMixin_DisableTwitch",
+    "twitch.KeyBindingMixin_DisableTwitch",
+    "twitch.MinecraftMixin_DisableTwitch"
   ]
 }
