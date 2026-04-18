@@ -2,7 +2,6 @@ package club.sk1er.patcher.mixins.bugfixes.gui;
 
 import net.minecraft.client.gui.screen.inventory.menu.InventoryMenuScreen;
 import net.minecraft.client.render.platform.GlStateManager;
-import net.minecraft.inventory.slot.InventorySlot;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

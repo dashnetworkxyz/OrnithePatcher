@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.features;
+package xyz.dashnetwork.patcher.mixins;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.living.player.LocalClientPlayerEntity;
@@ -17,7 +17,7 @@ public class MinecraftMixin_DebugCreativeSpectatorSwap {
     public Screen screen;
 
     @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;handleGuiKeyBindings()V"))
-    public void patcher$f3n(CallbackInfo callback) {
+    private void patcher$f3n(CallbackInfo callback) {
         if (Keyboard.getEventKeyState() && screen == null) {
             int pressed = Keyboard.getEventKey() == 0 ? Keyboard.getEventCharacter() + 256 : Keyboard.getEventKey();
 

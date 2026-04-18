@@ -1,33 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "club.sk1er.patcher.mixins",
+  "package": "xyz.dashnetwork.patcher.mixins",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-    "bugfixes.crashes.LivingEntityMixin_ResolveCrash",
-    "bugfixes.crashes.NbtCompoundMixin_FailFast",
-    "bugfixes.network.LazySupplierMixin_RaceCondition",
-    "bugfixes.network.packet.EntityPacketsMixin_ResolveNpe"
-  ],
-  "client": [
-    "bugfixes.GuiSoundsScreenMixin_PacketSpam",
-    "bugfixes.InventoryMenuScreen_MouseBindFix",
-    "bugfixes.crashes.BufferBuilderMixin_ResolveCrash",
-    "bugfixes.crashes.GameOptionsMixin_ResolveCrash",
-    "bugfixes.crashes.MultiplayerServerListWidgetMixin_ResolveCrash",
-    "bugfixes.crashes.ResourcePacksMixin_ResolveCrash",
-    "bugfixes.crashes.ScreenMixin_ResolveCrash",
-    "bugfixes.crashes.ServerListEntryWidgetMixin_ResolveCrash",
-    "bugfixes.gui.BookEditScreenMixin",
-    "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
-    "bugfixes.modelfixes.PlayerModelMixin_FixedTransformations",
-    "bugfixes.modelfixes.SkeletonModelMixin_FixedHeldItemTransformations",
-    "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
-    "bugfixes.network.ClientPlayNetworkHandlerMixin_ResourceExploitFix",
-    "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam",
-    "features.MinecraftMixin_DebugCreativeSpectatorSwap"
-  ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "client": [
+    "MinecraftMixin_DebugCreativeSpectatorSwap",
+    "MinecraftMixin_PatcherConfigSetup"
+  ]
 }

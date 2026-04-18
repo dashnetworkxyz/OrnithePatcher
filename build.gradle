@@ -13,6 +13,4 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	mappings ploceus.featherMappings(project.feather_build)
-
-	ploceus.dependOsl(project.osl_version)
 }

@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
-import xyz.dashnetwork.ornithepatcher.PatcherConfig;
+import xyz.dashnetwork.patcher.config.PatcherConfig;
 
 @Mixin(PlayerModel.class)
 public abstract class PlayerModelMixin_FixedTransformations extends HumanoidModel {
@@ -17,7 +17,7 @@ public abstract class PlayerModelMixin_FixedTransformations extends HumanoidMode
 
     @ModifyConstant(method = "<init>", constant = @Constant(floatValue = 2.5F))
     private float patcher$fixAlexArmHeight(float original) {
-        return /*PatcherConfig.FIXED_ALEX_ARMS.get()*/true ? 2.0F : original; // TODO: fix config
+        return PatcherConfig.options().fixedAlexArms ? 2.0F : original; // TODO: fix config
     }
 
     /**

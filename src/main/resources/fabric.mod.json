@@ -13,17 +13,12 @@
 	"license": "GPL-3.0",
 	"icon": "assets/ornithe_patcher/icon.png",
 	"environment": "*",
-	"entrypoints": {
-		"client-init": [
-			"xyz.dashnetwork.ornithepatcher.OrnithePatcher"
-		]
-	},
 	"mixins": [
-		"ornithe_patcher.mixins.json"
+      "ornithe_patcher.mixins.json",
+      "sk1er_patcher.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
-		"minecraft": "1.8.9",
-		"osl-entrypoints": ">=0.4.0"
+		"minecraft": "1.8.9"
 	}
 }
