@@ -15,7 +15,7 @@ public class InventoryMenuScreenMixin_Alpha {
             method = "render",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/inventory/menu/InventoryMenuScreen;renderMenuBackground(FII)V")
     )
-    private void alpha(int mouseX, int mouseY, float tickDelta, CallbackInfo ci) {
+    private void alpha(CallbackInfo ci) {
         GlStateManager.enableBlend();
         GlStateManager.enableAlphaTest();
         GlStateManager.blendFuncSeparate(770, 771, 1, 0);
@@ -25,7 +25,7 @@ public class InventoryMenuScreenMixin_Alpha {
             method = "renderSlot",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/inventory/menu/InventoryMenuScreen;drawSprite(IILnet/minecraft/client/render/texture/TextureAtlasSprite;II)V")
     )
-    private void slot(InventorySlot slot, CallbackInfo ci) {
+    private void slot(CallbackInfo ci) {
         GlStateManager.enableBlend();
         GlStateManager.enableAlphaTest();
         GlStateManager.blendFuncSeparate(770, 771, 1, 0);

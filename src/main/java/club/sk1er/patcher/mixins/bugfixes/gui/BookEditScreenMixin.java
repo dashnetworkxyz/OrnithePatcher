@@ -11,14 +11,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class BookEditScreenMixin {
 
     @Inject(method = "render", at = @At("HEAD"))
-    private void alpha(int mouseX, int mouseY, float tickDelta, CallbackInfo ci) {
+    private void alpha(CallbackInfo ci) {
         GlStateManager.enableBlend();
         GlStateManager.enableAlphaTest();
         GlStateManager.blendFuncSeparate(770, 771, 1, 0);
     }
 
     @Inject(method = "render", at = @At(value = "TAIL"))
-    private void end(int mouseX, int mouseY, float partialTicks, CallbackInfo ci) {
+    private void end(CallbackInfo ci) {
         GlStateManager.disableAlphaTest();
         GlStateManager.disableBlend();
     }
