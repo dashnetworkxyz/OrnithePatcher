@@ -4,9 +4,7 @@
 	"version": "${version}",
 	"name": "Ornithe Patcher",
 	"description": "A port of the Forge 1.8.9 Patcher mod for Ornithe",
-	"authors": [
-		"MasterDash5"
-	],
+	"authors": ["MasterDash5"],
 	"contact": {
 		"sources": "https://github.com/dashnetworkxyz/OrnithePatcher"
 	},
@@ -15,8 +13,8 @@
 	"environment": "*",
     "accessWidener": "sk1er_patcher.classtweaker",
 	"mixins": [
-      "ornithe_patcher.mixins.json",
-      "sk1er_patcher.mixins.json"
+        "ornithe_patcher.mixins.json",
+        "sk1er_patcher.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",

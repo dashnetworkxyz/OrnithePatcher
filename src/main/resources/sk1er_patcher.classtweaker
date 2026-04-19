@@ -1,5 +1,4 @@
-classTweaker  v1  official
-
+classTweaker v1 named
 accessible class net/minecraft/enchantment/EnchantmentHelper$ProtectionModifier
 accessible class net/minecraft/enchantment/EnchantmentHelper$DamageModifier
 accessible class net/minecraft/enchantment/EnchantmentHelper$ProtectionWildcard
