@@ -15,6 +15,10 @@ dependencies {
 	mappings ploceus.featherMappings(project.feather_build)
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/sk1er_patcher.classtweaker")
+}
+
 processResources {
     inputs.property 'version', version
 

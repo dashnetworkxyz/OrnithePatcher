@@ -13,6 +13,7 @@
 	"license": "GPL-3.0",
 	"icon": "assets/ornithe_patcher/icon.png",
 	"environment": "*",
+    "accessWidener": "sk1er_patcher.classtweaker",
 	"mixins": [
       "ornithe_patcher.mixins.json",
       "sk1er_patcher.mixins.json"

@@ -12,11 +12,15 @@
     "bugfixes.network.packet.EntityEventS2CPacketMixin_ResolveNpe",
     "bugfixes.network.packet.EntityHeadAnglesS2CPacketMixin_ResolveNpe",
     "bugfixes.network.packet.EntityMoveS2CPacketMixin_ResolveNpe",
-    "bugfixes.render.item.ItemStackMixin_HexColorTooltip"
+    "bugfixes.render.item.ItemStackMixin_HexColorTooltip",
+    "performance.EnchantmentHelperMixin_MemoryLeak",
+    "performance.RedstoneTorchBlockMixin_MemoryLeak"
   ],
   "client": [
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
     "bugfixes.InventoryMenuScreen_MouseBindFix",
+    "bugfixes.InventoryMenuScreenMixin_Touchscreen",
+    "bugfixes.PlayerRendererMixin_ArmPosition",
     "bugfixes.ServerListMixin_ResolveNpe",
     "bugfixes.crashes.BufferBuilderMixin_ResolveCrash",
     "bugfixes.crashes.GameOptionsMixin_ResolveCrash",
