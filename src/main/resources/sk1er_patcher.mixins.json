@@ -7,13 +7,16 @@
     "bugfixes.crashes.LivingEntityMixin_ResolveCrash",
     "bugfixes.crashes.NbtCompoundMixin_FailFast",
     "bugfixes.network.LazySupplierMixin_RaceCondition",
-    "bugfixes.network.PacketUtilsMixin_LogSpam"
+    "bugfixes.network.PacketUtilsMixin_LogSpam",
+    "bugfixes.render.item.ItemStackMixin_HexColorTooltip"
   ],
   "client": [
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
     "bugfixes.InventoryMenuScreen_MouseBindFix",
+    "bugfixes.ServerListMixin_ResolveNpe",
     "bugfixes.crashes.BufferBuilderMixin_ResolveCrash",
     "bugfixes.crashes.GameOptionsMixin_ResolveCrash",
+    "bugfixes.crashes.ItemModelShaperMixin_ResolveCrash",
     "bugfixes.crashes.MultiplayerServerListWidgetMixin_ResolveCrash",
     "bugfixes.crashes.ResourcePacksMixin_ResolveCrash",
     "bugfixes.crashes.ServerAddressMixin_ResolveCrash",
@@ -24,7 +27,13 @@
     "bugfixes.modelfixes.SkeletonModelMixin_FixedHeldItemTransformations",
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_ResourceExploitFix",
-    "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam"
+    "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam",
+    "bugfixes.optifine.RenderChunkRegionMixin_FixConnectedTextures",
+    "bugfixes.render.entity.ArrowRendererMixin_AlphaFix",
+    "bugfixes.render.entity.EntityRendererMixin_FireLayerFix",
+    "bugfixes.render.entity.FishingBobberRendererMixin_AlphaFix",
+    "bugfixes.render.item.ItemRendererMixin_CullFace",
+    "bugfixes.render.item.ItemRendererMixin_FixGlint"
   ],
   "injectors": {
     "defaultRequire": 1

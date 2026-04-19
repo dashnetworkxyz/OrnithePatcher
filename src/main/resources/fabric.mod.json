@@ -3,7 +3,7 @@
 	"id": "ornithe_patcher",
 	"version": "${version}",
 	"name": "Ornithe Patcher",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A port of the Forge 1.8.9 Patcher mod for Ornithe",
 	"authors": [
 		"MasterDash5"
 	],
