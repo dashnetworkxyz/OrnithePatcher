@@ -1,4 +1,4 @@
-# Ornithe Patcher
+# Ornithe Patcher [![Build](https://jenkins.dashnetwork.xyz/job/OrnithePatcher/badge/icon)](https://jenkins.dashnetwork.xyz/job/OrnithePatcher/)
 Port of [Patcher](https://github.com/Sk1erLLC/Patcher) for Ornithe 1.8.9. Has some additional features.
 
 # Using
