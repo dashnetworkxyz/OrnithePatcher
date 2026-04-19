@@ -18,7 +18,7 @@ public abstract class PlayerModelMixin_FixedTransformations extends HumanoidMode
 
     @ModifyConstant(method = "<init>", constant = @Constant(floatValue = 2.5F))
     private float patcher$fixAlexArmHeight(float original) {
-        return Patcher.get().config().options().fixedAlexArms ? 2.0F : original; // TODO: fix config
+        return Patcher.get().config().options().fixedAlexArms ? 2.0F : original;
     }
 
     /**
@@ -29,10 +29,10 @@ public abstract class PlayerModelMixin_FixedTransformations extends HumanoidMode
     public void translateRightArm(float scale) {
         if (thinArms) {
             rightArm.x += 0.5F;
-            rightArm.render(scale);
+            rightArm.transform(scale);
             rightArm.z -= 0.5F;
         } else {
-            rightArm.render(scale);
+            rightArm.transform(scale);
         }
     }
 

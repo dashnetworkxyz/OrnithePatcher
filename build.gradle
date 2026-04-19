@@ -14,3 +14,11 @@ dependencies {
 
 	mappings ploceus.featherMappings(project.feather_build)
 }
+
+processResources {
+    inputs.property 'version', version
+
+    filesMatching('fabric.mod.json') {
+        expand 'version': version
+    }
+}

@@ -7,7 +7,7 @@
     "bugfixes.crashes.LivingEntityMixin_ResolveCrash",
     "bugfixes.crashes.NbtCompoundMixin_FailFast",
     "bugfixes.network.LazySupplierMixin_RaceCondition",
-    "bugfixes.network.packet.EntityPacketsMixin_ResolveNpe"
+    "bugfixes.network.PacketUtilsMixin_LogSpam"
   ],
   "client": [
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
@@ -16,6 +16,7 @@
     "bugfixes.crashes.GameOptionsMixin_ResolveCrash",
     "bugfixes.crashes.MultiplayerServerListWidgetMixin_ResolveCrash",
     "bugfixes.crashes.ResourcePacksMixin_ResolveCrash",
+    "bugfixes.crashes.ServerAddressMixin_ResolveCrash",
     "bugfixes.crashes.ServerListEntryWidgetMixin_ResolveCrash",
     "bugfixes.gui.BookEditScreenMixin",
     "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
@@ -23,7 +24,7 @@
     "bugfixes.modelfixes.SkeletonModelMixin_FixedHeldItemTransformations",
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_ResourceExploitFix",
-    "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam",
+    "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam"
   ],
   "injectors": {
     "defaultRequire": 1
