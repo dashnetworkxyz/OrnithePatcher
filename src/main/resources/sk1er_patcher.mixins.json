@@ -23,6 +23,7 @@
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
     "bugfixes.InventoryMenuScreen_MouseBindFix",
     "bugfixes.InventoryMenuScreenMixin_Touchscreen",
+    "bugfixes.MinecraftMixin_FixScreenState",
     "bugfixes.PlayerRendererMixin_ArmPosition",
     "bugfixes.ServerListMixin_ResolveNpe",
     "bugfixes.crashes.BufferBuilderMixin_ResolveCrash",
