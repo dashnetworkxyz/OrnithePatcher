@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "ornithe_patcher",
+	"id": "ornithe-patcher",
 	"version": "${version}",
 	"name": "Ornithe Patcher",
 	"description": "A port of the Forge 1.8.9 Patcher mod for Ornithe",
@@ -9,7 +9,7 @@
 		"sources": "https://github.com/dashnetworkxyz/OrnithePatcher"
 	},
 	"license": "GPL-3.0",
-	"icon": "assets/ornithe_patcher/icon.png",
+	"icon": "assets/patcher/icon.png",
 	"environment": "*",
     "accessWidener": "sk1er_patcher.classtweaker",
 	"mixins": [
