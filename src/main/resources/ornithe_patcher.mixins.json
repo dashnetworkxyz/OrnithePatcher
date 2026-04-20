@@ -10,6 +10,7 @@
     "GameOptionsMixin_AdjustOptions",
     "MinecraftMixin_DebugCreativeSpectatorSwap",
     "MinecraftMixin_PatcherEntrypoint",
+    "SnooperScreen_DisableSnooper",
     "realms.OptionsScreenMixin_DisableRealms",
     "realms.RealmsBridgeMixin_DisableRealms",
     "realms.TitleScreenMixin_DisableRealms",

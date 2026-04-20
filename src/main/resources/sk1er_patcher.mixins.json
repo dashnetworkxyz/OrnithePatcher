@@ -4,6 +4,7 @@
   "package": "club.sk1er.patcher.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "accessors.MathHelperAccessor",
     "bugfixes.CommandRegistryMixin_CaseCommands",
     "bugfixes.crashes.LivingEntityMixin_ResolveCrash",
     "bugfixes.crashes.NbtCompoundMixin_FailFast",
@@ -14,9 +15,11 @@
     "bugfixes.network.packet.EntityMoveS2CPacketMixin_ResolveNpe",
     "bugfixes.render.item.ItemStackMixin_HexColorTooltip",
     "performance.EnchantmentHelperMixin_MemoryLeak",
+    "performance.MathHelperMixin_CompactLUT",
     "performance.RedstoneTorchBlockMixin_MemoryLeak"
   ],
   "client": [
+    "bugfixes.GameRendererMixin_ParallaxFix",
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
     "bugfixes.InventoryMenuScreen_MouseBindFix",
     "bugfixes.InventoryMenuScreenMixin_Touchscreen",
@@ -36,6 +39,7 @@
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_ResourceExploitFix",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam",
+    "bugfixes.optifine.GameRendererMixin_FixCrosshairZoom",
     "bugfixes.optifine.RenderChunkRegionMixin_FixConnectedTextures",
     "bugfixes.render.block.BlockModelRendererMixin_SmoothLighting",
     "bugfixes.render.block.LiquidRendererMixin_FixStitching",
