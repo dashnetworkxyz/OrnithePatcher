@@ -8,7 +8,7 @@ Download the latest pre-build JAR from the button below and add to your mods fol
 [![Download](https://custom-icon-badges.demolab.com/badge/Download-orange?style=for-the-badge&logo=download&logoColor=white)](https://jenkins.dashnetwork.xyz/job/OrnithePatcher/lastSuccessfulBuild/artifact/build/libs/OrnithePatcher-1.0.0.jar)
 
 # Building
-You'll need JDK 17 to compile Ornithe Patcher.<br>
+You'll need JDK 21 to compile Ornithe Patcher.<br>
 
 run `gradlew build`<br>
 Compiled jar will be in `build/libs/`
