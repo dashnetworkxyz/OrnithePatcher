@@ -2,7 +2,7 @@
 Port of [Patcher](https://github.com/Sk1erLLC/Patcher) for Ornithe 1.8.9. Has some additional features.
 
 # Using
-Download the latest pre-build JAR and add to your mods folder.<br>
+Download the latest pre-build JAR and add to your mods folder.<br><br>
 [![Download](https://custom-icon-badges.demolab.com/badge/Download-orange?style=for-the-badge&logo=download&logoColor=white)](https://jenkins.dashnetwork.xyz/job/OrnithePatcher/lastSuccessfulBuild/artifact/build/libs/OrnithePatcher-1.0.0.jar)
 
 # Building
