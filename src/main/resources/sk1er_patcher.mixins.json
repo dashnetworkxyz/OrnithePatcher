@@ -16,7 +16,9 @@
     "bugfixes.render.item.ItemStackMixin_HexColorTooltip",
     "performance.EnchantmentHelperMixin_MemoryLeak",
     "performance.MathHelperMixin_CompactLUT",
-    "performance.RedstoneTorchBlockMixin_MemoryLeak"
+    "performance.RedstoneTorchBlockMixin_MemoryLeak",
+    "performance.network.packet.CustomPayloadC2SPacketMixin_MemoryLeak",
+    "performance.network.packet.CustomPayloadS2CPacketMixin_MemoryLeak"
   ],
   "client": [
     "bugfixes.GameRendererMixin_ParallaxFix",
