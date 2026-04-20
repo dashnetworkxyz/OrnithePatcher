@@ -48,7 +48,8 @@
     "bugfixes.render.entity.EntityRendererMixin_FireLayerFix",
     "bugfixes.render.entity.FishingBobberRendererMixin_AlphaFix",
     "bugfixes.render.item.ItemRendererMixin_CullFace",
-    "bugfixes.render.item.ItemRendererMixin_FixGlint"
+    "bugfixes.render.item.ItemRendererMixin_FixGlint",
+    "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping"
   ],
   "injectors": {
     "defaultRequire": 1
