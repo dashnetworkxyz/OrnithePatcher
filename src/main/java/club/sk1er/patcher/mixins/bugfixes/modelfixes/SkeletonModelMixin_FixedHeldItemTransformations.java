@@ -10,7 +10,7 @@ public class SkeletonModelMixin_FixedHeldItemTransformations extends HumanoidMod
     @Override
     public void translateRightArm(float scale) {
         rightArm.x++;
-        rightArm.render(scale);
+        rightArm.transform(scale);
         rightArm.x--;
     }
 
