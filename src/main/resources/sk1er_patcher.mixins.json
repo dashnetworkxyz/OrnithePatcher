@@ -42,7 +42,6 @@
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_ResourceExploitFix",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam",
-    "features.GameRendererMixin_NewDebugCrosshair",
     "bugfixes.optifine.RenderChunkRegionMixin_FixConnectedTextures",
     "bugfixes.render.block.BlockModelRendererMixin_SmoothLighting",
     "bugfixes.render.block.LiquidRendererMixin_FixStitching",
@@ -51,6 +50,7 @@
     "bugfixes.render.entity.FishingBobberRendererMixin_AlphaFix",
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
+    "features.GameRendererMixin_NewDebugCrosshair",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping"
   ],
   "injectors": {
