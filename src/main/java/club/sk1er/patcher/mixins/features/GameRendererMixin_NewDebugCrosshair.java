@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes.optifine;
+package club.sk1er.patcher.mixins.features;
 
 import club.sk1er.patcher.hooks.DebugCrosshairHook;
 import net.minecraft.client.Minecraft;
@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(GameRenderer.class)
-public abstract class GameRendererMixin_FixCrosshairZoom {
+public abstract class GameRendererMixin_NewDebugCrosshair {
 
     @Unique
     private boolean canDraw;

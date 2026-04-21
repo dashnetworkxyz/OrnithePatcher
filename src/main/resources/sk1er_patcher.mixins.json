@@ -42,7 +42,7 @@
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_ResourceExploitFix",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam",
-    "bugfixes.optifine.GameRendererMixin_FixCrosshairZoom",
+    "features.GameRendererMixin_NewDebugCrosshair",
     "bugfixes.optifine.RenderChunkRegionMixin_FixConnectedTextures",
     "bugfixes.render.block.BlockModelRendererMixin_SmoothLighting",
     "bugfixes.render.block.LiquidRendererMixin_FixStitching",
