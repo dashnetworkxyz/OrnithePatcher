@@ -5,7 +5,7 @@ Port of [Patcher](https://github.com/Sk1erLLC/Patcher) for Ornithe 1.8.9. Has so
 ***WARNING*** This project is still in alpha! Features are still being added, and bugs are likely unsquashed. Use with caution.
 
 Download the latest pre-build JAR from the button below and add to your mods folder.<br><br>
-[![Download](https://custom-icon-badges.demolab.com/badge/Download-orange?style=for-the-badge&logo=download&logoColor=white)](https://jenkins.dashnetwork.xyz/job/OrnithePatcher/lastSuccessfulBuild/artifact/build/libs/OrnithePatcher-1.0.0.jar)
+[![Download](https://custom-icon-badges.demolab.com/badge/Download-orange?style=for-the-badge&logo=download&logoColor=white)](https://jenkins.dashnetwork.xyz/job/OrnithePatcher/lastSuccessfulBuild/artifact/build/libs/OrnithePatcher-1.0.0-ALPHA.jar)
 
 # Building
 You'll need JDK 21 to compile Ornithe Patcher.<br>
