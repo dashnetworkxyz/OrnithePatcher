@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
-public final class PatcherConfig {
+public class PatcherConfig {
 
     private static File file;
     private static ConfigOptions options;
