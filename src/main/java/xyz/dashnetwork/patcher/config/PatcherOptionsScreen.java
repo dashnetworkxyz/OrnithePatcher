@@ -6,9 +6,10 @@ import net.minecraft.client.resource.language.I18n;
 
 public class PatcherOptionsScreen extends Screen {
 
+    private final String title = "Patcher Settings";
+
     private final Screen parent;
     private final PatcherConfig config;
-    private String title = "Patcher Settings";
 
     public PatcherOptionsScreen(Screen parent, PatcherConfig config) {
         this.parent = parent;
@@ -17,10 +18,15 @@ public class PatcherOptionsScreen extends Screen {
 
     @Override
     public void init() {
-        title = I18n.translate("patcher.options.title");
         buttons.clear();
-
         buttons.add(new ButtonWidget(200, width / 2 - 100, height - 27, I18n.translate("gui.done")));
+    }
+
+    @Override
+    public void render(int mouseX, int mouseY, float tickDelta) {
+        renderBackground();
+
+        super.render(mouseX, mouseY, tickDelta);
     }
 
 }
