@@ -34,7 +34,6 @@ public abstract class GameRendererMixin_ParallaxFix {
             return;
         }
 
-        // TODO: hide in F5
         LocalClientPlayerEntity player = minecraft.player;
         Vec3d vec = player.getRotationVector(player.pitch, player.yaw);
 

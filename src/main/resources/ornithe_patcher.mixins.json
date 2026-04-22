@@ -8,7 +8,7 @@
   },
   "client": [
     "GameOptionsMixin_AdjustOptions",
-    "GameRendererMixin_FixDebugCrosshairWireframe",
+    "GameRendererMixin_DebugCrosshairFixes",
     "MinecraftMixin_DebugCreativeSpectatorSwap",
     "MinecraftMixin_PatcherEntrypoint",
     "OptionsScreenMixin_PatcherSettings",
