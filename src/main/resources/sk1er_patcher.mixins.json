@@ -6,6 +6,7 @@
   "mixins": [
     "accessors.MathHelperAccessor",
     "bugfixes.CommandRegistryMixin_CaseCommands",
+    "bugfixes.LivingEntityMixin_MouseDelayFix",
     "bugfixes.crashes.LivingEntityMixin_ResolveCrash",
     "bugfixes.crashes.NbtCompoundMixin_FailFast",
     "bugfixes.network.LazySupplierMixin_RaceCondition",
@@ -50,7 +51,6 @@
     "bugfixes.render.entity.FishingBobberRendererMixin_AlphaFix",
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
-    "features.GameRendererMixin_NewDebugCrosshair",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping"
   ],
   "injectors": {

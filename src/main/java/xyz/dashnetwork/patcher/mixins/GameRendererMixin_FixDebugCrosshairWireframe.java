@@ -16,10 +16,8 @@ public abstract class GameRendererMixin_FixDebugCrosshairWireframe {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/world/WorldRenderer;renderOutlineShape(Lnet/minecraft/util/math/Box;IIII)V")
     )
     private void patcher$drawCube(Box shape, int r, int g, int b, int a) {
-        Box box = new Box(shape.minX * 10, shape.minY * 10, shape.minZ * 10, shape.maxX * 10, shape.maxY * 10, shape.maxZ * 10);
-
-        WorldRendererHook.renderSolidShape(box, r, g, b, a);
-        WorldRenderer.renderOutlineShape(box, r, g, b, a);
+        WorldRendererHook.renderSolidShape(shape, r, g, b, a);
+        WorldRenderer.renderOutlineShape(shape, r, g, b, a);
     }
 
 }

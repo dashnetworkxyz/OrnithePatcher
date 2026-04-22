@@ -38,7 +38,7 @@ public abstract class GameRendererMixin_ParallaxFix {
         LocalClientPlayerEntity player = minecraft.player;
         Vec3d vec = player.getRotationVector(player.pitch, player.yaw);
 
-        GlStateManager.translated(vec.x, y + vec.y , vec.z);
+        GlStateManager.translated(vec.x * 0.15, (vec.y * 0.15) + y, vec.z * 0.15);
     }
 
 }
