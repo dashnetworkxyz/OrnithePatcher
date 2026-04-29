@@ -22,10 +22,10 @@
     "bugfixes.render.item.ItemStackMixin_HexColorTooltip",
     "performance.BlockPosMixin_ReduceAllocations",
     "performance.EnchantmentHelperMixin_MemoryLeak",
+    "performance.EndermanEntityMixin_ShortRemoveBoxing",
     "performance.EntityMixin_ByteRemoveBoxing",
     "performance.EntityMixin_FloatRemoveBoxing",
     "performance.EntityMixin_IntegerRemoveBoxing",
-    "performance.EndermanEntityMixin_ShortRemoveBoxing",
     "performance.RedstoneTorchBlockMixin_MemoryLeak",
     "performance.network.packet.CustomPayloadC2SPacketMixin_MemoryLeak",
     "performance.network.packet.CustomPayloadS2CPacketMixin_MemoryLeak",
@@ -33,6 +33,7 @@
     "performance.vanilla.MathHelperMixin_CompactLUT"
   ],
   "client": [
+    "accessors.BufferBuilderAccessor",
     "bugfixes.GameRendererMixin_ParallaxFix",
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
     "bugfixes.InventoryMenuScreen_MouseBindFix",
@@ -65,6 +66,7 @@
     "bugfixes.render.entity.FishingBobberRendererMixin_AlphaFix",
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
-    "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping"
+    "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
+    "performance.PolygonMixin_BatchDraw"
   ]
 }
