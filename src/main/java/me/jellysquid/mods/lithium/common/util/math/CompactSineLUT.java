@@ -1,6 +1,6 @@
 /**
  * THE FOLLOWING CODE IS LICENSED UNDER THE GNU Lesser General Public License v3.0
- * This work, "PolyPatcher", uses code from CaffeineMC's "lithium-fabric", licensed under the LGPL-3.0 license. The original license is included in the repository.
+ * This work, "OrnithePatcher", uses code from CaffeineMC's "lithium-fabric", licensed under the LGPL-3.0 license. The original license is included in the repository.
  * https://github.com/CaffeineMC/lithium-fabric/tree/develop
  * https://github.com/CaffeineMC/lithium-fabric/blob/develop/LICENSE.txt
  */

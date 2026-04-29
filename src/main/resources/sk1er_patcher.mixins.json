@@ -21,6 +21,7 @@
     "bugfixes.network.packet.EntityMoveS2CPacketMixin_ResolveNpe",
     "bugfixes.render.item.ItemStackMixin_HexColorTooltip",
     "performance.BlockPosMixin_ReduceAllocations",
+    "performance.DirectionMixin_ReduceAllocations",
     "performance.EnchantmentHelperMixin_MemoryLeak",
     "performance.EndermanEntityMixin_ShortRemoveBoxing",
     "performance.EntityMixin_ByteRemoveBoxing",
