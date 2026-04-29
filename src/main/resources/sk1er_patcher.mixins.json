@@ -6,6 +6,7 @@
   "mixins": [
     "accessors.MathHelperAccessor",
     "bugfixes.CommandRegistryMixin_CaseCommands",
+    "bugfixes.EntityMixin_FixedBrightness",
     "bugfixes.LivingEntityMixin_MouseDelayFix",
     "bugfixes.crashes.LivingEntityMixin_ResolveCrash",
     "bugfixes.crashes.NbtCompoundMixin_FailFast",
@@ -28,6 +29,7 @@
     "bugfixes.InventoryMenuScreenMixin_Touchscreen",
     "bugfixes.MinecraftMixin_FixScreenState",
     "bugfixes.PlayerRendererMixin_ArmPosition",
+    "bugfixes.ScreenMixin_FixLinuxLink",
     "bugfixes.ServerListMixin_ResolveNpe",
     "bugfixes.crashes.BufferBuilderMixin_ResolveCrash",
     "bugfixes.crashes.GameOptionsMixin_ResolveCrash",
