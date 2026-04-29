@@ -23,17 +23,20 @@ public class ScreenMixin_FixLinuxLink {
      */
     @Overwrite
     private void openLink(URI uri) {
+        String platform = System.getProperty("os.name").toLowerCase(Locale.ROOT);
         String url = uri.toString();
-        String[] arguments = switch (System.getProperty("os.name").toLowerCase(Locale.ROOT)) {
-            case "win" -> new String[] { "rundll32", "url.dll,FileProtocolHandler", url };
-            case "mac" -> new String[] { "open", url };
-            default -> {
-                if (uri.getScheme().equals("file"))
-                    url = url.replace("file:", "file://");
+        String[] arguments;
+        
+        if (platform.contains("win"))
+            arguments = new String[] { "rundll32", "url.dll,FileProtocolHandler", url };
+        else if (platform.contains("mac"))
+            arguments = new String[] { "open", url };
+        else {
+            if (uri.getScheme().equals("file"))
+                url = url.replace("file:", "file://");
 
-                yield new String[] { "xdg-open", url };
-            }
-        };
+            arguments = new String[] { "xdg-open", url };
+        }
 
         try {
             Process process = Runtime.getRuntime().exec(arguments);
