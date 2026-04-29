@@ -26,6 +26,8 @@
     "performance.EntityMixin_ByteRemoveBoxing",
     "performance.EntityMixin_FloatRemoveBoxing",
     "performance.EntityMixin_IntegerRemoveBoxing",
+    "performance.MinecraftServerMixin_MemoryLeak",
+    "performance.NodeEvaluatorMixin_MemoryLeak",
     "performance.RedstoneTorchBlockMixin_MemoryLeak",
     "performance.network.packet.CustomPayloadC2SPacketMixin_MemoryLeak",
     "performance.network.packet.CustomPayloadS2CPacketMixin_MemoryLeak",
@@ -67,6 +69,7 @@
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
-    "performance.PolygonMixin_BatchDraw"
+    "performance.PolygonMixin_BatchDraw",
+    "performance.TextureManagerMixin_MemoryLeak"
   ]
 }
