@@ -11,11 +11,6 @@ import java.util.function.Supplier;
 
 public abstract class AbstractOptionsScreen extends Screen {
 
-    private static final byte COLUMNS = 2;
-    private static final short BUTTON_WIDTH = 150;
-    private static final byte BUTTON_HEIGHT = 20;
-    private static final byte ROW_GAP = 4;
-
     private record ButtonDescriptor(Supplier<String> label, String description, Runnable runnable) {}
 
     private final Int2ObjectLinkedOpenHashMap<ButtonDescriptor> descriptorMap = new Int2ObjectLinkedOpenHashMap<>();
@@ -37,8 +32,8 @@ public abstract class AbstractOptionsScreen extends Screen {
 
         Int2ObjectSortedMap.FastSortedEntrySet<ButtonDescriptor> set = descriptorMap.int2ObjectEntrySet();
 
-        int rows = (set.size() + COLUMNS - 1) / 2;
-        int totalHeight = rows * BUTTON_HEIGHT + (rows - 1) * ROW_GAP;
+        int rows = (set.size() + 1) / 2;
+        int totalHeight = rows * 20 + (rows - 1) * 4;
 
         int startY = (height - totalHeight) / 2;
         int leftX = width / 2 - 155;
@@ -47,16 +42,16 @@ public abstract class AbstractOptionsScreen extends Screen {
 
         for (Map.Entry<Integer, ButtonDescriptor> entry : set) {
             ButtonDescriptor descriptor = entry.getValue();
-            int row = index / COLUMNS;
-            int column = index % COLUMNS;
+            int row = index / 2;
+            int column = index % 2;
             int x = column == 0 ? leftX : rightX;
-            int y = startY + row * (BUTTON_HEIGHT + ROW_GAP);
+            int y = startY + row * 24;
 
-            buttons.add(new ButtonWidget(entry.getKey(), x, y, BUTTON_WIDTH, BUTTON_HEIGHT, descriptor.label().get()));
+            buttons.add(new ButtonWidget(entry.getKey(), x, y, 150, 20, descriptor.label().get()));
             index++;
         }
 
-        int doneY = startY + rows * (20 + ROW_GAP) + 8;
+        int doneY = startY + rows * 24 + 8;
         buttons.add(new ButtonWidget(200, width / 2 - 100, doneY, I18n.translate("gui.done")));
     }
 
