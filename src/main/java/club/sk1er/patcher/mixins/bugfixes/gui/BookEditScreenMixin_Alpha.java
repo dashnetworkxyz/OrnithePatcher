@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(BookEditScreen.class)
-public class BookEditScreenMixin {
+public class BookEditScreenMixin_Alpha {
 
     @Inject(method = "render", at = @At("HEAD"))
     private void alpha(CallbackInfo ci) {

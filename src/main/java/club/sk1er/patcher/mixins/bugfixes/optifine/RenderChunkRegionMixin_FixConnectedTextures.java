@@ -28,4 +28,5 @@ public class RenderChunkRegionMixin_FixConnectedTextures {
         if (i < 0 || i >= blocks.length)
             cir.setReturnValue(AIR_STATE);
     }
+
 }

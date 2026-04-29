@@ -14,14 +14,14 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import xyz.dashnetwork.patcher.Patcher;
 
 @Mixin(value = GameRenderer.class, priority = 1001)
-public abstract class GameRendererMixin_ParallaxFix {
+public class GameRendererMixin_ParallaxFix {
 
     @Shadow
     private Minecraft minecraft;
 
     @ModifyConstant(method = "transformCamera", constant = @Constant(floatValue = -0.1F))
     private float patcher$modifyParallax(float original) {
-        return Patcher.get().config().options().parallaxFix ? 0.05F : original;
+        return 0.05F;
     }
 
     @Redirect(
@@ -29,15 +29,10 @@ public abstract class GameRendererMixin_ParallaxFix {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/platform/GlStateManager;translatef(FFF)V")
     )
     private void patcher$moveAxisIndicators(float x, float y, float z) {
-        if (!Patcher.get().config().options().parallaxFix) {
-            GlStateManager.translatef(x, y, z);
-            return;
-        }
-
         LocalClientPlayerEntity player = minecraft.player;
         Vec3d vec = player.getRotationVector(player.pitch, player.yaw);
 
-        GlStateManager.translated(vec.x * 0.15, (vec.y * 0.15) + y, vec.z * 0.15);
+        GlStateManager.translated(vec.x * 0.15F, (vec.y * 0.15F) + y, vec.z * 0.15F);
     }
 
 }
