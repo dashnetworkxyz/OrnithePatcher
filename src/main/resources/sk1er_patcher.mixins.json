@@ -3,6 +3,10 @@
   "minVersion": "0.8",
   "package": "club.sk1er.patcher.mixins",
   "compatibilityLevel": "JAVA_8",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "plugin": "club.sk1er.patcher.mixins.plugin.PatcherMixinPlugin",
   "mixins": [
     "accessors.MathHelperAccessor",
     "bugfixes.CommandRegistryMixin_CaseCommands",
@@ -17,10 +21,11 @@
     "bugfixes.network.packet.EntityMoveS2CPacketMixin_ResolveNpe",
     "bugfixes.render.item.ItemStackMixin_HexColorTooltip",
     "performance.EnchantmentHelperMixin_MemoryLeak",
-    "performance.MathHelperMixin_CompactLUT",
     "performance.RedstoneTorchBlockMixin_MemoryLeak",
     "performance.network.packet.CustomPayloadC2SPacketMixin_MemoryLeak",
-    "performance.network.packet.CustomPayloadS2CPacketMixin_MemoryLeak"
+    "performance.network.packet.CustomPayloadS2CPacketMixin_MemoryLeak",
+    "performance.optifine.MathHelperMixin_OFFastMath",
+    "performance.vanilla.MathHelperMixin_CompactLUT"
   ],
   "client": [
     "bugfixes.GameRendererMixin_ParallaxFix",
@@ -41,6 +46,7 @@
     "bugfixes.gui.BookEditScreenMixin_AddBackground",
     "bugfixes.gui.BookEditScreenMixin_Alpha",
     "bugfixes.gui.InventoryMenuScreenMixin_Alpha",
+    "bugfixes.gui.OptionsScreenMixin_SaveSettings",
     "bugfixes.modelfixes.PlayerModelMixin_FixedTransformations",
     "bugfixes.modelfixes.SkeletonModelMixin_FixedHeldItemTransformations",
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
@@ -55,8 +61,5 @@
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  ]
 }

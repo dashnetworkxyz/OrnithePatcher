@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.performance;
+package club.sk1er.patcher.mixins.performance.vanilla;
 
 import me.jellysquid.mods.lithium.common.util.math.CompactSineLUT;
 import net.minecraft.util.math.MathHelper;

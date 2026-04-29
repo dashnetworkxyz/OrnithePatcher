@@ -1,6 +1,7 @@
 package xyz.dashnetwork.patcher.config.screen;
 
 import net.minecraft.client.gui.screen.Screen;
+import xyz.dashnetwork.patcher.Patcher;
 
 public class PatcherOptionsScreen extends AbstractOptionsScreen {
 
@@ -13,6 +14,11 @@ public class PatcherOptionsScreen extends AbstractOptionsScreen {
         addButton(103, () -> "Screens...", "", () -> {});
         addButton(104, () -> "Screenshots...", "", () -> {});
         addButton(105, () -> "Experimental...", "", () -> {});
+    }
+
+    @Override
+    public void removed() {
+        Patcher.get().config().save();
     }
 
 }
