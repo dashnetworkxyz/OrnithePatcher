@@ -11,7 +11,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import xyz.dashnetwork.patcher.Patcher;
 
 @Mixin(value = GameRenderer.class, priority = 1001)
 public class GameRendererMixin_ParallaxFix {
