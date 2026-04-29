@@ -20,6 +20,7 @@
     "bugfixes.network.packet.EntityHeadAnglesS2CPacketMixin_ResolveNpe",
     "bugfixes.network.packet.EntityMoveS2CPacketMixin_ResolveNpe",
     "bugfixes.render.item.ItemStackMixin_HexColorTooltip",
+    "performance.BlockPosMixin_ReduceAllocations",
     "performance.EnchantmentHelperMixin_MemoryLeak",
     "performance.RedstoneTorchBlockMixin_MemoryLeak",
     "performance.network.packet.CustomPayloadC2SPacketMixin_MemoryLeak",
