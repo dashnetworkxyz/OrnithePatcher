@@ -26,7 +26,7 @@ public class ScreenMixin_FixLinuxLink {
         String platform = System.getProperty("os.name").toLowerCase(Locale.ROOT);
         String url = uri.toString();
         String[] arguments;
-        
+
         if (platform.contains("win"))
             arguments = new String[] { "rundll32", "url.dll,FileProtocolHandler", url };
         else if (platform.contains("mac"))
