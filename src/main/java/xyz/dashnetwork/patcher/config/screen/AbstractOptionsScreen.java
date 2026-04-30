@@ -26,8 +26,8 @@ public abstract class AbstractOptionsScreen extends Screen {
         queued.add(new PatcherButtonWidget(queued.size() + 100, label, description, callback));
     }
 
-    protected void addSlider(Supplier<String> label, String description, float initial, Consumer<PatcherSliderWidget> callback) {
-        queued.add(new PatcherSliderWidget(queued.size() + 100, label, description, initial, callback));
+    protected void addSlider(Supplier<String> label, String description, int segments, int initial, Consumer<PatcherSliderWidget> callback) {
+        queued.add(new PatcherSliderWidget(queued.size() + 100, label, description, segments, initial, callback));
     }
 
     @Override

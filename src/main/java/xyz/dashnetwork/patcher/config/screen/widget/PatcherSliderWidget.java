@@ -12,17 +12,31 @@ import java.util.function.Supplier;
 @Environment(EnvType.CLIENT)
 public class PatcherSliderWidget extends PatcherButtonWidget {
 
+    private final int segments;
     private float value;
     private boolean dragging;
 
     @SuppressWarnings("unchecked")
-    public PatcherSliderWidget(int id, Supplier<String> label, String description, float initial, Consumer<? super PatcherSliderWidget> clickEvent) {
+    public PatcherSliderWidget(int id, Supplier<String> label, String description, int segments, int initial, Consumer<? super PatcherSliderWidget> clickEvent) {
         super(id, label, description, (Consumer<? super PatcherButtonWidget>) clickEvent);
+        this.segments = Math.max(2, segments);
         this.value = initial;
+
+        segmentValue();
     }
 
-    public float getValue() {
-        return value;
+    public int getSegment() {
+        return MathHelper.clamp(Math.round(value * (segments - 1)), 0, segments - 1);
+    }
+
+    private void segmentValue() {
+        value = (float) getSegment() / (float) (segments - 1);
+    }
+
+    @Override
+    protected void onClick() {
+        segmentValue();
+        super.onClick();
     }
 
     @Override
