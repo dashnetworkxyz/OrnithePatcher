@@ -12,7 +12,7 @@ public class BookEditScreenMixin_AddBackground extends Screen {
 
     @Inject(method = "render", at = @At("HEAD"))
     private void patcher$addBackground(CallbackInfo ci) {
-        drawBackgroundTexture(1);
+        renderBackground();
     }
 
 }
