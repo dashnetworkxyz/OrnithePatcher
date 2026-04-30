@@ -1,4 +1,4 @@
-package xyz.dashnetwork.patcher.mixins;
+package club.sk1er.patcher.mixins.features;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.living.player.LocalClientPlayerEntity;

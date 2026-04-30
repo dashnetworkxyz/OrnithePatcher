@@ -8,7 +8,6 @@
   },
   "client": [
     "GameOptionsMixin_AdjustOptions",
-    "MinecraftMixin_DebugCreativeSpectatorSwap",
     "MinecraftMixin_PatcherEntrypoint",
     "OptionsScreenMixin_PatcherSettings",
     "SnooperScreen_DisableSnooper",
