@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes;
+package club.sk1er.patcher.mixins.bugfixes.render.entity;
 
 import net.minecraft.client.render.entity.PlayerRenderer;
 import net.minecraft.client.render.model.entity.PlayerModel;
