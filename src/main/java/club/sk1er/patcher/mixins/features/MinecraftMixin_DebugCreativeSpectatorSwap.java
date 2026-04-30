@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import xyz.dashnetwork.patcher.Patcher;
 
 @Mixin(Minecraft.class)
 public class MinecraftMixin_DebugCreativeSpectatorSwap {
@@ -18,6 +19,9 @@ public class MinecraftMixin_DebugCreativeSpectatorSwap {
 
     @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;handleGuiKeyBindings()V"))
     private void patcher$f3n(CallbackInfo callback) {
+        if (!Patcher.get().config().options().f3nKeybind.get())
+            return;
+
         if (Keyboard.getEventKeyState() && screen == null) {
             int pressed = Keyboard.getEventKey() == 0 ? Keyboard.getEventCharacter() + 256 : Keyboard.getEventKey();
 

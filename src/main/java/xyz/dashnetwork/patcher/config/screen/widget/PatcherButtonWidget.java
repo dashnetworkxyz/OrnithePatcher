@@ -9,15 +9,22 @@ import java.util.function.Supplier;
 public class PatcherButtonWidget extends ButtonWidget {
 
     private final Supplier<String> label;
-    private final String description;
+    private final String tooltip;
     private final Consumer<? super PatcherButtonWidget> clickEvent;
+    private long mouseStillTime = 0;
+    private int lastMouseX = -1;
+    private int lastMouseY = -1;
     private boolean pressed = false;
 
-    public PatcherButtonWidget(int id, Supplier<String> label, String description, Consumer<? super PatcherButtonWidget> clickEvent) {
+    public PatcherButtonWidget(int id, Supplier<String> label, String tooltip, Consumer<? super PatcherButtonWidget> clickEvent) {
         super(id, 0, 0, 150, 20, label.get());
         this.label = label;
-        this.description = description;
+        this.tooltip = tooltip;
         this.clickEvent = clickEvent;
+    }
+
+    public String getTooltip() {
+        return tooltip;
     }
 
     protected void onClick() {

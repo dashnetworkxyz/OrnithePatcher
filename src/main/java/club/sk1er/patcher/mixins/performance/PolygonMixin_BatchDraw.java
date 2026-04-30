@@ -25,7 +25,7 @@ public class PolygonMixin_BatchDraw {
     private void patcher$beginDraw(BufferBuilder builder, int drawMode, VertexFormat format) {
         patcher$drawOnSelf = !((BufferBuilderAccessor) builder).isBuilding();
 
-        if (patcher$drawOnSelf || !Patcher.get().config().options().batchModelRendering)
+        if (patcher$drawOnSelf || !Patcher.get().config().options().batchModelRendering.get())
             builder.begin(drawMode, DefaultVertexFormat.POSITION_TEX_NORMAL);
     }
 
@@ -34,7 +34,7 @@ public class PolygonMixin_BatchDraw {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/vertex/Tesselator;end()V")
     )
     private void patcher$endDraw(Tesselator tesselator) {
-        if (patcher$drawOnSelf || !Patcher.get().config().options().batchModelRendering)
+        if (patcher$drawOnSelf || !Patcher.get().config().options().batchModelRendering.get())
             tesselator.end();
     }
 

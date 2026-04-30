@@ -17,8 +17,8 @@ public class PatcherSliderWidget extends PatcherButtonWidget {
     private boolean dragging;
 
     @SuppressWarnings("unchecked")
-    public PatcherSliderWidget(int id, Supplier<String> label, String description, int segments, int initial, Consumer<? super PatcherSliderWidget> clickEvent) {
-        super(id, label, description, (Consumer<? super PatcherButtonWidget>) clickEvent);
+    public PatcherSliderWidget(int id, Supplier<String> label, String tooltip, int segments, int initial, Consumer<? super PatcherSliderWidget> clickEvent) {
+        super(id, label, tooltip, (Consumer<? super PatcherButtonWidget>) clickEvent);
         this.segments = Math.max(2, segments);
         this.value = initial;
 
