@@ -4,6 +4,7 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.locale.I18n;
 import xyz.dashnetwork.patcher.config.screen.widget.PatcherButtonWidget;
+import xyz.dashnetwork.patcher.config.screen.widget.PatcherSliderWidget;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,11 +26,9 @@ public abstract class AbstractOptionsScreen extends Screen {
         queued.add(new PatcherButtonWidget(queued.size() + 100, label, description, callback));
     }
 
-    /*
-    protected void addSlider(Supplier<String> label, String description, float initial, Consumer<Float> callback) {
-        descriptors.add(new SliderDescriptor(label, description, initial, callback));
+    protected void addSlider(Supplier<String> label, String description, float initial, Consumer<PatcherSliderWidget> callback) {
+        queued.add(new PatcherSliderWidget(queued.size() + 100, label, description, initial, callback));
     }
-     */
 
     @Override
     public void init() {

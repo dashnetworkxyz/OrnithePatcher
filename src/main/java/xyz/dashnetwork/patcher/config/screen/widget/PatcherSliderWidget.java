@@ -3,18 +3,21 @@ package xyz.dashnetwork.patcher.config.screen.widget;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.render.platform.GlStateManager;
 import net.minecraft.util.math.MathHelper;
 
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
 @Environment(EnvType.CLIENT)
-public class SliderWidget extends ButtonWidget {
+public class PatcherSliderWidget extends PatcherButtonWidget {
 
     private float value;
     private boolean dragging;
 
-    public SliderWidget(int id, int x, int y, String message, float initial) {
-        super(id, x, y, 150, 20, message);
+    @SuppressWarnings("unchecked")
+    public PatcherSliderWidget(int id, Supplier<String> label, String description, float initial, Consumer<? super PatcherSliderWidget> clickEvent) {
+        super(id, label, description, (Consumer<? super PatcherButtonWidget>) clickEvent);
         this.value = initial;
     }
 
@@ -35,7 +38,7 @@ public class SliderWidget extends ButtonWidget {
         if (dragging) {
             this.value = (float) (mouseX - (x + 4)) / (float) (this.width - 8);
             this.value = MathHelper.clamp(value, 0.0F, 1.0F);
-            // TOOD: some sort of click event?
+            onClick();
         }
 
         minecraft.getTextureManager().bind(WIDGETS_LOCATION);

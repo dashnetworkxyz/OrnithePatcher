@@ -5,7 +5,7 @@ import xyz.dashnetwork.patcher.Patcher;
 
 public class PatcherOptionsScreen extends AbstractOptionsScreen {
 
-    private float value;
+    private float test;
 
     public PatcherOptionsScreen(Screen parent) {
         super("Patcher Settings", parent);
@@ -18,7 +18,7 @@ public class PatcherOptionsScreen extends AbstractOptionsScreen {
         addButton(() -> "Screens...", "", (button) -> {});
         addButton(() -> "Screenshots...", "", (button) -> {});
         addButton(() -> "Experimental...", "", (button) -> {});
-        //addSlider(110, () -> "Test Slider: " + value, null, (value) -> this.value = value, 0);
+        addSlider(() -> "Test Slider: " + test, null, 0, (slider) -> this.test = slider.getValue());
     }
 
     @Override

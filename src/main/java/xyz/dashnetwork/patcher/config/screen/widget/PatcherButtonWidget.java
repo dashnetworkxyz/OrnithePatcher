@@ -10,10 +10,10 @@ public class PatcherButtonWidget extends ButtonWidget {
 
     private final Supplier<String> label;
     private final String description;
-    private final Consumer<PatcherButtonWidget> clickEvent;
+    private final Consumer<? super PatcherButtonWidget> clickEvent;
     private boolean pressed = false;
 
-    public PatcherButtonWidget(int id, Supplier<String> label, String description, Consumer<PatcherButtonWidget> clickEvent) {
+    public PatcherButtonWidget(int id, Supplier<String> label, String description, Consumer<? super PatcherButtonWidget> clickEvent) {
         super(id, 0, 0, 150, 20, label.get());
         this.label = label;
         this.description = description;
