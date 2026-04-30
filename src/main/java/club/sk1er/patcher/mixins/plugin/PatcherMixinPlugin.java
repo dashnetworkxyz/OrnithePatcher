@@ -14,9 +14,11 @@ public class PatcherMixinPlugin implements IMixinConfigPlugin {
     @Override
     public void onLoad(String mixinPackage) {
         try {
-            Class.forName("Config"); // Root level class? Really?
+            Class.forName("me.modmuss50.optifabric.mod.Optifabric");
             optifine = true;
-        } catch (ClassNotFoundException ignored) {}
+        } catch (ClassNotFoundException ignored) {
+            ignored.printStackTrace();
+        }
     }
 
     @Override

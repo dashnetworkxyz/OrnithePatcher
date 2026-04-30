@@ -2,13 +2,16 @@ package xyz.dashnetwork.patcher.config.screen;
 
 import net.minecraft.client.gui.screen.Screen;
 import xyz.dashnetwork.patcher.Patcher;
+import xyz.dashnetwork.patcher.config.ConfigOptions;
 
 public class PatcherOptionsScreen extends AbstractOptionsScreen {
 
+    private ConfigOptions options;
     private int test;
 
     public PatcherOptionsScreen(Screen parent) {
         super("Patcher Settings", parent);
+        options = Patcher.get().config().options();
 
         addButton(() -> "Bug Fixes...", "", (button) -> {
             System.out.println("TESTY TEST TEST");
