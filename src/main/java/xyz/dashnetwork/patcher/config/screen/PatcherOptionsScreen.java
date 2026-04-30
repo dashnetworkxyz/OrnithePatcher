@@ -5,15 +5,20 @@ import xyz.dashnetwork.patcher.Patcher;
 
 public class PatcherOptionsScreen extends AbstractOptionsScreen {
 
+    private float value;
+
     public PatcherOptionsScreen(Screen parent) {
         super("Patcher Settings", parent);
 
-        addButton(100, () -> "Bug Fixes...", "", () -> {});
-        addButton(101, () -> "Miscellaneous...", "", () -> {});
-        addButton(102, () -> "Performance...", "", () -> {});
-        addButton(103, () -> "Screens...", "", () -> {});
-        addButton(104, () -> "Screenshots...", "", () -> {});
-        addButton(105, () -> "Experimental...", "", () -> {});
+        addButton(() -> "Bug Fixes...", "", (button) -> {
+            System.out.println("TESTY TEST TEST");
+        });
+        addButton(() -> "Miscellaneous...", "", (button) -> {});
+        addButton(() -> "Performance...", "", (button) -> {});
+        addButton(() -> "Screens...", "", (button) -> {});
+        addButton(() -> "Screenshots...", "", (button) -> {});
+        addButton(() -> "Experimental...", "", (button) -> {});
+        //addSlider(110, () -> "Test Slider: " + value, null, (value) -> this.value = value, 0);
     }
 
     @Override
