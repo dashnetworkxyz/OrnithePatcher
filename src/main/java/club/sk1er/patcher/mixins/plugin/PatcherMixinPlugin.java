@@ -16,9 +16,7 @@ public class PatcherMixinPlugin implements IMixinConfigPlugin {
         try {
             Class.forName("me.modmuss50.optifabric.mod.Optifabric");
             optifine = true;
-        } catch (ClassNotFoundException ignored) {
-            ignored.printStackTrace();
-        }
+        } catch (ClassNotFoundException ignored) {}
     }
 
     @Override
