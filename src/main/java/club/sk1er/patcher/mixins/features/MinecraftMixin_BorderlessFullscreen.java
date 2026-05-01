@@ -17,11 +17,19 @@ public abstract class MinecraftMixin_BorderlessFullscreen {
         if (!Patcher.get().config().options().borderlessFullscreen.get())
             return;
 
-        if (Utils.getOS() != Utils.OS.WINDOWS)
+        if (Utils.getOS() != Utils.OS.WINDOWS) {
+            Patcher.get().logger().info("Cannot use borderless fullscreen. This feature only works on Windows.");
             return;
+        }
 
-        if (MinecraftHook.toggleBorderlessFullscreen((Minecraft) (Object) this))
-            ci.cancel();
+        /*
+        if (MinecraftHook.toggleBorderlessFullscreen((Minecraft) (Object) this)) {
+
+        }
+         */
+        MinecraftHook.test();
+
+        ci.cancel();
     }
 
 }
