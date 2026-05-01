@@ -11,6 +11,7 @@
     "MinecraftMixin_PatcherEntrypoint",
     "OptionsScreenMixin_PatcherSettings",
     "SnooperScreen_DisableSnooper",
+    "accessors.ButtonWidgetAccessor",
     "realms.OptionsScreenMixin_DisableRealms",
     "realms.RealmsBridgeMixin_DisableRealms",
     "realms.TitleScreenMixin_DisableRealms",

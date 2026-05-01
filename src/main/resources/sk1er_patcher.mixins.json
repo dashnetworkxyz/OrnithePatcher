@@ -38,6 +38,7 @@
   ],
   "client": [
     "accessors.BufferBuilderAccessor",
+    "accessors.MinecraftAccessor",
     "bugfixes.GuiSoundsScreenMixin_PacketSpam",
     "bugfixes.InventoryMenuScreen_MouseBindFix",
     "bugfixes.InventoryMenuScreenMixin_Touchscreen",
@@ -74,6 +75,7 @@
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap",
+    "features.MinecraftMixin_WindowedFullscreen",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
     "performance.PolygonMixin_BatchDraw",
     "performance.TextureManagerMixin_MemoryLeak"

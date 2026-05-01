@@ -6,6 +6,7 @@ import net.minecraft.locale.I18n;
 import net.minecraft.util.math.MathHelper;
 import xyz.dashnetwork.patcher.config.screen.widget.PatcherButtonWidget;
 import xyz.dashnetwork.patcher.config.screen.widget.PatcherSliderWidget;
+import xyz.dashnetwork.patcher.mixins.accessors.ButtonWidgetAccessor;
 
 import java.awt.Rectangle;
 import java.util.ArrayList;
@@ -87,7 +88,7 @@ public abstract class AbstractOptionsScreen extends Screen {
                 continue;
 
             int x2 = button.x + button.getWidth();
-            int y2 = button.y + button.height;
+            int y2 = button.y + ((ButtonWidgetAccessor) button).getHeight();
 
             if (button.x <= mouseX && button.y <= mouseY && x2 > mouseX && y2 > mouseY)
                 return button;
@@ -99,9 +100,7 @@ public abstract class AbstractOptionsScreen extends Screen {
     @Override
     public void init() {
         int rows = (queued.size() + 1) / 2;
-        int totalHeight = rows * 20 + (rows - 1) * 4;
-
-        int startY = (height - totalHeight) / 2;
+        int startY = height / 6 - 12 + 24;
         int leftX = width / 2 - 155;
         int rightX = width / 2 + 5;
         int index = 0;

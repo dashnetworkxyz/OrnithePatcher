@@ -14,13 +14,11 @@ public class PatcherOptionsScreen extends AbstractOptionsScreen {
         options = Patcher.get().config().options();
 
         addButton(() -> "Bug Fixes...", "", () -> {});
-        addButton(() -> "Miscellaneous...", "", () -> {});
+        addButton(() -> "Miscellaneous...", "", () -> minecraft.openScreen(new PatcherMiscellaneousOptionsScreen(this)));
         addButton(() -> "Performance...", "", () -> {});
         addButton(() -> "Screens...", "", () -> {});
         addButton(() -> "Screenshots...", "", () -> {});
-        addButton(() -> "Experimental...", "This is a test tooltip message.\nLine 2 test", () -> {});
-        addSlider(() -> "Test Slider: " + test, null, 5, 0, segment -> test = segment);
-        addToggle("F3N Keybind", null, options.f3nKeybind);
+        addToggle("Windowed Fullscreen", null, options.windowedFullscreen);
     }
 
     @Override

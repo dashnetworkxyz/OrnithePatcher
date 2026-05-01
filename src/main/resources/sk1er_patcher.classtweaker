@@ -4,4 +4,3 @@ accessible class net/minecraft/enchantment/EnchantmentHelper$DamageModifier
 accessible class net/minecraft/enchantment/EnchantmentHelper$ProtectionWildcard
 accessible class net/minecraft/enchantment/EnchantmentHelper$DamageWildcard
 accessible method net/minecraft/entity/Entity getRotationVector (FF)Lnet/minecraft/util/math/Vec3d;
-accessible field net/minecraft/client/gui/widget/ButtonWidget height I
