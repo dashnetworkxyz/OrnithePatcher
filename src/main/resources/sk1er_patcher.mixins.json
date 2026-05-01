@@ -61,6 +61,7 @@
     "bugfixes.modelfixes.VillagerModelMixin_ResolveRobeHeight",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_ResourceExploitFix",
     "bugfixes.network.ClientPlayNetworkHandlerMixin_SignChatSpam",
+    "bugfixes.optifine.DebugOverlayMixin_FixDebugOverlay",
     "bugfixes.optifine.RenderChunkRegionMixin_FixConnectedTextures",
     "bugfixes.render.GameRendererMixin_AdjustEyeHeightLighting",
     "bugfixes.render.GameRendererMixin_ParallaxFix",
