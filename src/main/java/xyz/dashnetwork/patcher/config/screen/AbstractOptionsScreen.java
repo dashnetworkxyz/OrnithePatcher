@@ -8,7 +8,7 @@ import xyz.dashnetwork.patcher.config.screen.widget.PatcherButtonWidget;
 import xyz.dashnetwork.patcher.config.screen.widget.PatcherSliderWidget;
 import xyz.dashnetwork.patcher.mixins.accessors.ButtonWidgetAccessor;
 
-import java.awt.Rectangle;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;

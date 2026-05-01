@@ -74,8 +74,8 @@
     "bugfixes.render.entity.PlayerRendererMixin_ArmPosition",
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
+    "features.MinecraftMixin_BorderlessFullscreen",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap",
-    "features.MinecraftMixin_WindowedFullscreen",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
     "performance.PolygonMixin_BatchDraw",
     "performance.TextureManagerMixin_MemoryLeak"
