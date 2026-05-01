@@ -77,16 +77,13 @@ public abstract class MinecraftMixin_WindowedFullscreen {
 
                 updateDisplay();
                 Mouse.setCursorPosition((Display.getX() + Display.getWidth()) >> 1, (Display.getY() + Display.getHeight()) >> 1);
-
-                if (grabbed)
-                    Mouse.setGrabbed(true);
-
-                Display.setResizable(false);
-                Display.setResizable(true);
                 Display.setResizable(!fullscreen);
             } catch (LWJGLException exception) {
                 Patcher.get().logger().error("Failed to toggle fullscreen.", exception);
             }
+
+            if (grabbed)
+                Mouse.setGrabbed(true);
         }
     }
 
