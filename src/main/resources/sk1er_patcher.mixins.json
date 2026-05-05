@@ -73,7 +73,7 @@
     "bugfixes.render.entity.EntityRendererMixin_FireLayerFix",
     "bugfixes.render.entity.FishingBobberRendererMixin_AlphaFix",
     "bugfixes.render.entity.PlayerRendererMixin_ArmPosition",
-    "bugfixes.render.item.ItemInHandRendererMixin_RemoveWaterOverlay",
+    "features.ItemInHandRendererMixin_RemoveWaterOverlay",
     "bugfixes.render.item.ItemRendererMixin_CullFace",
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
     "features.MinecraftMixin_BorderlessFullscreen",

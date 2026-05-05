@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes.render.item;
+package club.sk1er.patcher.mixins.features;
 
 import net.minecraft.client.render.ItemInHandRenderer;
 import org.spongepowered.asm.mixin.Mixin;
