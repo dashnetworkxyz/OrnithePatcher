@@ -13,6 +13,7 @@ import java.io.IOException;
 @Mixin(AnvilChunkStorage.class)
 public class AnvilChunkStorageMixin_UnclosedStream {
 
+    // Local Capture misses this variable, so we have to resort to a Redirect.
     @Redirect(
             method = "loadChunk(Lnet/minecraft/world/World;II)Lnet/minecraft/world/chunk/WorldChunk;",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/nbt/NbtIo;read(Ljava/io/DataInputStream;)Lnet/minecraft/nbt/NbtCompound;")
