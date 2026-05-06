@@ -32,6 +32,7 @@
     "performance.MinecraftServerMixin_MemoryLeak",
     "performance.NodeEvaluatorMixin_MemoryLeak",
     "performance.RedstoneTorchBlockMixin_MemoryLeak",
+    "performance.WorldChunkMixin_Optimization",
     "performance.network.packet.CustomPayloadC2SPacketMixin_MemoryLeak",
     "performance.network.packet.CustomPayloadS2CPacketMixin_MemoryLeak",
     "performance.optifine.MathHelperMixin_OFFastMath",
@@ -80,6 +81,7 @@
     "features.MinecraftMixin_BorderlessFullscreen",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
+    "performance.ModelPartMixin_BatchDraw",
     "performance.PolygonMixin_BatchDraw",
     "performance.TextureManagerMixin_MemoryLeak"
   ]
