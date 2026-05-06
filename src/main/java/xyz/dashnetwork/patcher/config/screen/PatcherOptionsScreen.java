@@ -10,6 +10,7 @@ public class PatcherOptionsScreen extends AbstractOptionsScreen {
 
         addButton(() -> "Miscellaneous...", "", () -> minecraft.openScreen(new PatcherMiscellaneousOptionsScreen(this)));
         addButton(() -> "Screens...", "", () -> minecraft.openScreen(new PatcherScreensOptionsScreen(this)));
+        addButton(() -> "Performance...", "", () -> minecraft.openScreen(new PatcherPerformanceOptionsScreen(this)));
     }
 
     @Override
