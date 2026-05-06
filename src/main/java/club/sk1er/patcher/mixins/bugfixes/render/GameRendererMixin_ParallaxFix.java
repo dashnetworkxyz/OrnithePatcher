@@ -27,7 +27,7 @@ public class GameRendererMixin_ParallaxFix {
     )
     private void patcher$moveAxisIndicators(float x, float y, float z) {
         LocalClientPlayerEntity player = minecraft.player;
-        Vec3d vec = player.getRotationVector(player.pitch, player.yaw);
+        Vec3d vec = player.getRotationVector(minecraft.getCamera().pitch, minecraft.getCamera().yaw);
 
         GlStateManager.translated(vec.x * 0.15F, (vec.y * 0.15F) + y, vec.z * 0.15F);
     }
