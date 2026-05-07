@@ -27,7 +27,7 @@ public class PatcherScreensOptionsScreen extends AbstractOptionsScreen {
                         Uses the 1.11 chat length of 256.
                         Servers may kick you for using this even if
                         they support 1.11+
-                        """, options.extendedChatLength, "OFF", "AUTO", "ON");
+                        """, options.extendedChatLength, "OFF", "Auto", "ON");
     }
 
 }
