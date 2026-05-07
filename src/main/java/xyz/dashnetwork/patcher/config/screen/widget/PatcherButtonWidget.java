@@ -11,9 +11,6 @@ public class PatcherButtonWidget extends ButtonWidget {
     private final Supplier<String> label;
     private final String tooltip;
     private final Consumer<? super PatcherButtonWidget> clickEvent;
-    private long mouseStillTime = 0;
-    private int lastMouseX = -1;
-    private int lastMouseY = -1;
     private boolean pressed = false;
 
     public PatcherButtonWidget(int id, Supplier<String> label, String tooltip, Consumer<? super PatcherButtonWidget> clickEvent) {

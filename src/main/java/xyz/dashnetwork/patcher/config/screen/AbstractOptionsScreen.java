@@ -12,6 +12,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntConsumer;
 import java.util.function.Supplier;
 
@@ -40,6 +41,21 @@ public abstract class AbstractOptionsScreen extends Screen {
                 () -> label + ": " + (atomic.get() ? I18n.translate("options.on") : I18n.translate("options.off")),
                 tooltip,
                 () -> atomic.set(!atomic.get())
+        );
+    }
+
+    protected void addToggle(String label, String tooltip, AtomicInteger atomic, String... values) {
+        addButton(
+                () -> label + ": " + values[atomic.get()],
+                tooltip,
+                () -> {
+                    int value = atomic.get() + 1;
+
+                    if (value >= values.length)
+                        atomic.set(0);
+                    else
+                        atomic.set(value);
+                }
         );
     }
 
