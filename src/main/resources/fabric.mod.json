@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "ornithe-patcher",
+	"id": "patcher",
 	"version": "${version}",
-	"name": "Ornithe Patcher",
+	"name": "Patcher",
 	"description": "A port of the Forge 1.8.9 Patcher mod for Ornithe",
 	"authors": ["MasterDash5"],
 	"contact": {

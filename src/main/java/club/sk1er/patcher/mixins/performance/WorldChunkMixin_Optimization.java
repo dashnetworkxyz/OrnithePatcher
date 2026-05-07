@@ -1,7 +1,5 @@
 package club.sk1er.patcher.mixins.performance;
 
-import net.minecraft.block.state.BlockState;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.chunk.WorldChunk;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

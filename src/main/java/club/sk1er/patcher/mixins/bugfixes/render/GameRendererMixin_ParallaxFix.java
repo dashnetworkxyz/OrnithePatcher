@@ -1,7 +1,6 @@
 package club.sk1er.patcher.mixins.bugfixes.render;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.entity.living.player.LocalClientPlayerEntity;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.render.platform.GlStateManager;
 import net.minecraft.util.math.Vec3d;
