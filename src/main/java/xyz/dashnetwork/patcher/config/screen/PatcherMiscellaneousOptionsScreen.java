@@ -13,6 +13,9 @@ public class PatcherMiscellaneousOptionsScreen extends AbstractOptionsScreen {
         addToggle("Borderless Fullscreen", """
                 Implement Borderless Fullscreen in Minecraft.
                 This allows you to drag your mouse outside the window.
+                
+                Currently this requires LWJGL2 and is
+                incompatible with legacy-lwjgl3
                 """, options.borderlessFullscreen);
         addToggle("F3N Keybind", """
                         Toggles the backported F3+N keybind.
