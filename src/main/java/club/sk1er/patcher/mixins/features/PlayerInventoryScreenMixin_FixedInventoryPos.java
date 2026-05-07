@@ -19,7 +19,7 @@ public abstract class PlayerInventoryScreenMixin_FixedInventoryPos extends Inven
     @Inject(method = "checkStatusEffects", at = @At("TAIL"))
     private void patcher$setX(CallbackInfo ci) {
         if (Patcher.get().config().options().fixedInventoryPosition.get())
-            this.x = (this.width - this.backgroundWidth) / 2;
+            x = (width - backgroundWidth) / 2;
     }
 
 }
