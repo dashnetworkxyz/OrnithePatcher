@@ -18,7 +18,7 @@ public class EntityMixin_IntegerRemoveBoxing {
             method = "registerSyncedData",
             at = @At(value = "NEW", target = "(I)Ljava/lang/Integer;")
     )
-    private Integer patcher$integerUseValueOf(int value) {
+    private Integer patcher$integerRemoveBoxing(int value) {
         return value;
     }
 

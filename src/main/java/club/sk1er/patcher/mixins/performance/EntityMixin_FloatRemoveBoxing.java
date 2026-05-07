@@ -18,7 +18,7 @@ public class EntityMixin_FloatRemoveBoxing {
             method = "registerSyncedData",
             at = @At(value = "NEW", target = "(F)Ljava/lang/Float;")
     )
-    private Float patcher$floatUseValueOf(float value) {
+    private Float patcher$floatRemoveBoxing(float value) {
         return value;
     }
 

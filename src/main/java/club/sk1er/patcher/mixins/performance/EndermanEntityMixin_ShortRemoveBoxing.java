@@ -12,7 +12,7 @@ public class EndermanEntityMixin_ShortRemoveBoxing {
             method = "registerSyncedData",
             at = @At(value = "NEW", target = "(S)Ljava/lang/Short;")
     )
-    private Short patcher$shortUseValueOf(short value) {
+    private Short patcher$shortRemoveBoxing(short value) {
         return value;
     }
 

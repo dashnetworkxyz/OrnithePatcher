@@ -28,7 +28,7 @@ public class EntityMixin_ByteRemoveBoxing {
             method = "registerSyncedData",
             at = @At(value = "NEW", target = "(B)Ljava/lang/Byte;")
     )
-    private Byte patcher$byteUseValueOf(byte value) {
+    private Byte patcher$byteRemoveBoxing(byte value) {
         return value;
     }
 
