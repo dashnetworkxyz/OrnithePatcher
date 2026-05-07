@@ -10,7 +10,14 @@ public class PatcherScreensOptionsScreen extends AbstractOptionsScreen {
         super("Patcher Screen Settings", parent);
         final ConfigOptions options = Patcher.get().config().options();
 
-        addToggle("Remove Water Overlay", null, options.removeWaterOverlay);
+        addToggle("Remove Water Overlay", """
+                        Remove the water texture overlay
+                        when underwater.
+                        """, options.removeWaterOverlay);
+        addToggle("Fixed Inventory Pos", """
+                        Stop potion effects from shifting your
+                        inventory to the right.
+                        """, options.fixedInventoryPosition);
     }
 
 }

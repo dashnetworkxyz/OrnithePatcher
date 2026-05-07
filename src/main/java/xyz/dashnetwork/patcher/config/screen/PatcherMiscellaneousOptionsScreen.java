@@ -10,7 +10,10 @@ public class PatcherMiscellaneousOptionsScreen extends AbstractOptionsScreen {
         super("Patcher Miscellaneous Settings", parent);
         ConfigOptions options = Patcher.get().config().options();
 
-        addToggle("Borderless Fullscreen", null, options.borderlessFullscreen);
+        addToggle("Borderless Fullscreen", """
+                Implement Borderless Fullscreen in Minecraft.
+                This allows you to drag your mouse outside the window.
+                """, options.borderlessFullscreen);
         addToggle("F3N Keybind", """
                         Toggles the backported F3+N keybind.
                         Changes gamemode between spectator and creative.

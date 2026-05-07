@@ -80,6 +80,7 @@
     "features.ItemInHandRendererMixin_RemoveWaterOverlay",
     "features.MinecraftMixin_BorderlessFullscreen",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap",
+    "features.PlayerInventoryScreenMixin_FixedInventoryPos",
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
     "performance.ModelPartMixin_BatchDraw",
     "performance.PolygonMixin_BatchDraw",

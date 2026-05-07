@@ -10,7 +10,7 @@ public class PatcherPerformanceOptionsScreen extends AbstractOptionsScreen {
         super("Patcher Performance Settings", parent);
         final ConfigOptions options = Patcher.get().config().options();
 
-        addToggle("Batch Model Render", null, options.batchModelRendering);
+        addToggle("Batch Model Render", "Render models in a single draw call.", options.batchModelRendering);
     }
 
 }
