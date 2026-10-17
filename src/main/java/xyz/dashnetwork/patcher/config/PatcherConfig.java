@@ -18,7 +18,7 @@ public class PatcherConfig {
     private ConfigOptions options;
 
     public PatcherConfig(File directory) {
-        file = new File(directory, "optionspatcher.json");
+        file = new File(directory, "ornithepatcher-options.json");
         gson = new GsonBuilder().setPrettyPrinting().create();
     }
 
@@ -42,6 +42,8 @@ public class PatcherConfig {
     public void save() {
         if (options == null)
             return;
+
+        file.getParentFile().mkdirs();
 
         try (BufferedWriter writer = Files.newBufferedWriter(file.toPath(), StandardCharsets.UTF_8)) {
             gson.toJson(options, writer);

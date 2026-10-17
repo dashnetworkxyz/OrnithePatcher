@@ -6,13 +6,15 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ConfigOptions {
 
     // Features
-    public AtomicBoolean f3nKeybind = new AtomicBoolean(false);
-    public AtomicBoolean borderlessFullscreen = new AtomicBoolean(false);
-    public AtomicBoolean removeWaterOverlay = new AtomicBoolean(false);
-    public AtomicBoolean fixedInventoryPosition = new AtomicBoolean(false);
-    public AtomicInteger extendedChatLength = new AtomicInteger(1); // AUTO
+    public final AtomicBoolean f3nKeybind = new AtomicBoolean(false);
+    public final AtomicBoolean borderlessFullscreen = new AtomicBoolean(false);
+    public final AtomicBoolean removeWaterOverlay = new AtomicBoolean(false);
+    public final AtomicBoolean fixedInventoryPosition = new AtomicBoolean(true);
+    public final AtomicBoolean removeChatLogLimit = new AtomicBoolean(false);
+    public final AtomicBoolean disableToast = new AtomicBoolean(false);
+    public final AtomicInteger extendedChatLength = new AtomicInteger(1); // AUTO
 
     // Performance
-    public AtomicBoolean batchModelRendering = new AtomicBoolean(false);
+    public final AtomicBoolean batchModelRendering = new AtomicBoolean(false);
 
 }

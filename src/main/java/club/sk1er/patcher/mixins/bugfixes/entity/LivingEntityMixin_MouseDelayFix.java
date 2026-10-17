@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes;
+package club.sk1er.patcher.mixins.bugfixes.entity;
 
 import net.minecraft.client.entity.living.player.LocalClientPlayerEntity;
 import net.minecraft.entity.Entity;

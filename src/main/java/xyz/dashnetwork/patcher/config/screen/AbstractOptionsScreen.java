@@ -4,6 +4,8 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.locale.I18n;
 import net.minecraft.util.math.MathHelper;
+import xyz.dashnetwork.patcher.Patcher;
+import xyz.dashnetwork.patcher.config.ConfigOptions;
 import xyz.dashnetwork.patcher.config.screen.widget.PatcherButtonWidget;
 import xyz.dashnetwork.patcher.config.screen.widget.PatcherSliderWidget;
 import xyz.dashnetwork.patcher.mixins.accessors.ButtonWidgetAccessor;
@@ -28,6 +30,10 @@ public abstract class AbstractOptionsScreen extends Screen {
     public AbstractOptionsScreen(String title, Screen parent) {
         this.title = title;
         this.parent = parent;
+    }
+
+    protected ConfigOptions options() {
+        return Patcher.get().config().options();
     }
 
     protected void addButton(Supplier<String> label, String tooltip, final Runnable callback) {

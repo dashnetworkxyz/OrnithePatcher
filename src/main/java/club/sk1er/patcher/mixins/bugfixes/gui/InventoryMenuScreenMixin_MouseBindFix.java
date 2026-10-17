@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes;
+package club.sk1er.patcher.mixins.bugfixes.gui;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.inventory.menu.InventoryMenuScreen;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(InventoryMenuScreen.class)
-public abstract class InventoryMenuScreen_MouseBindFix extends Screen {
+public abstract class InventoryMenuScreenMixin_MouseBindFix extends Screen {
 
     @Shadow
     private InventorySlot hoveredSlot;

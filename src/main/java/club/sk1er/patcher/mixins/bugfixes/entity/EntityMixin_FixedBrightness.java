@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes;
+package club.sk1er.patcher.mixins.bugfixes.entity;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;

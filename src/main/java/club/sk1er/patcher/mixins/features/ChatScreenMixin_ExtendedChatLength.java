@@ -24,7 +24,6 @@ public class ChatScreenMixin_ExtendedChatLength {
     @Unique
     private final String[] KNOWN_SERVERS = new String[] { // TODO: User customizable
             "hypixel.net",
-            "og-network.net",
             "oc.tc",
             "dashnetwork.xyz"
     };

@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes;
+package club.sk1er.patcher.mixins.bugfixes.gui;
 
 import net.minecraft.client.gui.screen.Screen;
 import org.apache.logging.log4j.Logger;

@@ -23,7 +23,7 @@ public class Patcher {
 
         logger = LogManager.getLogger("Ornithe Patcher");
 
-        config = new PatcherConfig(gameDirectory);
+        config = new PatcherConfig(new File(gameDirectory, "config"));
         config.load();
     }
 

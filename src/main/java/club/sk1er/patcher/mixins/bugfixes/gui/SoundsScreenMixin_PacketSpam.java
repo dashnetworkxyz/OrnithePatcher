@@ -1,4 +1,4 @@
-package club.sk1er.patcher.mixins.bugfixes;
+package club.sk1er.patcher.mixins.bugfixes.gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.options.GameOptions;
@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(targets = "net.minecraft.client.gui.screen.SoundsScreen$SoundSliderWidget")
-public class GuiSoundsScreenMixin_PacketSpam {
+public class SoundsScreenMixin_PacketSpam {
 
     // don't send a packet for every frame the slider is dragged, instead save that for when the slider is released
     @Redirect(
