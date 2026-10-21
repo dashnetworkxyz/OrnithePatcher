@@ -36,24 +36,30 @@ public abstract class AbstractOptionsScreen extends Screen {
         return Patcher.get().config().options();
     }
 
-    protected void addButton(Supplier<String> label, String tooltip, final Runnable callback) {
-        queued.add(new PatcherButtonWidget(queued.size() + 100, label, tooltip,
+    protected void addButton(Supplier<String> label, String tooltip, boolean active, final Runnable callback) {
+        queued.add(new PatcherButtonWidget(queued.size() + 100, label, tooltip, active,
                 ignored -> callback.run())
         );
     }
 
-    protected void addToggle(String label, String tooltip, AtomicBoolean atomic) {
+    protected void addToggle(String label, String tooltip, boolean active, AtomicBoolean atomic) {
         addButton(
                 () -> label + ": " + (atomic.get() ? I18n.translate("options.on") : I18n.translate("options.off")),
                 tooltip,
+                active,
                 () -> atomic.set(!atomic.get())
         );
     }
 
-    protected void addToggle(String label, String tooltip, AtomicInteger atomic, String... values) {
+    protected void addToggle(String label, String tooltip, AtomicBoolean atomic) {
+        addToggle(label, tooltip, true, atomic);
+    }
+
+    protected void addToggle(String label, String tooltip, boolean active, AtomicInteger atomic, String... values) {
         addButton(
                 () -> label + ": " + values[atomic.get()],
                 tooltip,
+                active,
                 () -> {
                     int value = atomic.get() + 1;
 
@@ -65,8 +71,12 @@ public abstract class AbstractOptionsScreen extends Screen {
         );
     }
 
-    protected void addSlider(Supplier<String> label, String tooltip, int segments, int initial, IntConsumer callback) {
-        queued.add(new PatcherSliderWidget(queued.size() + 100, label, tooltip, segments, initial,
+    protected void addToggle(String label, String tooltip, AtomicInteger atomic, String... values) {
+        addToggle(label, tooltip, true, atomic, values);
+    }
+
+    protected void addSlider(Supplier<String> label, String tooltip, int segments, int initial, boolean active, final IntConsumer callback) {
+        queued.add(new PatcherSliderWidget(queued.size() + 100, label, tooltip, segments, initial, active,
                 slider -> callback.accept(slider.getSegment()))
         );
     }

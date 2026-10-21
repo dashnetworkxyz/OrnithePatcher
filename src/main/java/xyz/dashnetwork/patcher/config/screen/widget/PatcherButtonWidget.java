@@ -13,10 +13,12 @@ public class PatcherButtonWidget extends ButtonWidget {
     private final Consumer<? super PatcherButtonWidget> clickEvent;
     private boolean pressed = false;
 
-    public PatcherButtonWidget(int id, Supplier<String> label, String tooltip, Consumer<? super PatcherButtonWidget> clickEvent) {
+    public PatcherButtonWidget(int id, Supplier<String> label, String tooltip, boolean active,
+                               Consumer<? super PatcherButtonWidget> clickEvent) {
         super(id, 0, 0, 150, 20, label.get());
         this.label = label;
         this.tooltip = tooltip;
+        this.active = active;
         this.clickEvent = clickEvent;
     }
 
