@@ -15,10 +15,14 @@ public class PatcherMiscellaneousOptionsScreen extends AbstractOptionsScreen {
                 Windows only and requires LWJGL2.
                 Incompatible with legacy-lwjgl3
                 """, Utils.getOS() == Utils.OS.WINDOWS, options().borderlessFullscreen);
-        addToggle("F3N Keybind", """
+        addToggle("F3+N Keybind", """
                 Toggles the backported F3+N keybind.
                 Changes gamemode between spectator and creative.
                 """, options().f3nKeybind);
+        addToggle("Better Camera", """
+                Stop tall grass, plants, etc. from affecting
+                your FOV as done in 1.14+.
+                """, options().betterCamera);
     }
 
 }

@@ -31,6 +31,7 @@
     "performance.EntityMixin_ByteRemoveBoxing",
     "performance.EntityMixin_FloatRemoveBoxing",
     "performance.EntityMixin_IntegerRemoveBoxing",
+    "performance.IdentifierMixin_Deduplicate",
     "performance.MinecraftServerMixin_MemoryLeak",
     "performance.NodeEvaluatorMixin_MemoryLeak",
     "performance.RedstoneTorchBlockMixin_MemoryLeak",
@@ -93,6 +94,7 @@
     "features.ChatGuiMixin_RemoveChatLogLimit",
     "features.ChatScreenMixin_ExtendedChatLength",
     "features.GameGuiMixin_RemoveScoreboardNumbers",
+    "features.GameRendererMixin_CameraPerspective",
     "features.ItemInHandRendererMixin_RemoveWaterOverlay",
     "features.MinecraftMixin_BorderlessFullscreen",
     "features.MinecraftMixin_DebugCreativeSpectatorSwap",
@@ -101,6 +103,8 @@
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
     "performance.ModelPartMixin_BatchDraw",
     "performance.PolygonMixin_BatchDraw",
-    "performance.TextureManagerMixin_MemoryLeak"
+    "performance.RenderChunkMixin_OptimizeBlockEntities",
+    "performance.TextureManagerMixin_MemoryLeak",
+    "performance.network.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping"
   ]
 }

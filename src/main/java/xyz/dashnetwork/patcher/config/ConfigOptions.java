@@ -13,6 +13,7 @@ public class ConfigOptions {
     public final AtomicBoolean removeChatLogLimit = new AtomicBoolean(false);
     public final AtomicBoolean disableToast = new AtomicBoolean(false);
     public final AtomicBoolean scoreboardNumbers = new AtomicBoolean(true);
+    public final AtomicBoolean betterCamera = new AtomicBoolean(true);
     public final AtomicInteger extendedChatLength = new AtomicInteger(1); // AUTO
 
     // Performance
