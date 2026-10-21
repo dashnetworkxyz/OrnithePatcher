@@ -20,6 +20,8 @@ import java.util.function.Supplier;
 
 public abstract class AbstractOptionsScreen extends Screen {
 
+    private static final byte TOOLTIP_PADDING = 5;
+
     private final List<ButtonWidget> queued = new ArrayList<>();
     private final String title;
     private final Screen parent;
@@ -94,24 +96,26 @@ public abstract class AbstractOptionsScreen extends Screen {
                     return;
 
                 String[] lines = tooltip.split("\n");
-                Rectangle rec = getTooltipRectangle(mouseY);
+                Rectangle rec = getTooltipRectangle(mouseY, lines.length);
 
                 fill(rec.x, rec.y, rec.width + rec.x, rec.height + rec.y, -536870912);
 
                 for (int i = 0; i < lines.length; i++)
-                    minecraft.textRenderer.drawWithShadow(lines[i], rec.x + 5, rec.y + 5 + i * 11, 14540253);
+                    minecraft.textRenderer.drawWithShadow(
+                            lines[i],rec.x + TOOLTIP_PADDING, rec.y + TOOLTIP_PADDING + i * 11, 14540253
+                    );
             }
         }
     }
 
-    private Rectangle getTooltipRectangle(int mouseY) {
+    private Rectangle getTooltipRectangle(int mouseY, int size) {
         int x = width / 2 - 150;
         int y = height / 6 - 7;
 
         if (mouseY <= y + 98)
             y += 105;
 
-        return new Rectangle(x, y, 300, 94);
+        return new Rectangle(x, y, 300, (size * 11) + TOOLTIP_PADDING + 2);
     }
 
     private ButtonWidget getSelectedButton(int mouseX, int mouseY) {
