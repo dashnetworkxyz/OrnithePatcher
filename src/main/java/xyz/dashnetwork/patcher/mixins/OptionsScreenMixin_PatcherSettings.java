@@ -4,6 +4,7 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.options.OptionsScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -15,12 +16,15 @@ import java.util.List;
 @Mixin(OptionsScreen.class)
 public class OptionsScreenMixin_PatcherSettings<T> extends Screen {
 
+    @Unique
+    private static final int BUTTON_ID = 107;
+
     @Redirect(
             method = "init",
             at = @At(value = "INVOKE", target = "Ljava/util/List;add(Ljava/lang/Object;)Z")
     )
     private boolean patcher$addPatcherSettings(List<T> list, T object) {
-        if (object instanceof ButtonWidget button && button.id == 104)
+        if (object instanceof ButtonWidget button && button.id == BUTTON_ID)
             button.message = "Patcher Settings...";
 
         return list.add(object);
@@ -28,7 +32,7 @@ public class OptionsScreenMixin_PatcherSettings<T> extends Screen {
 
     @Inject(method = "buttonClicked", at = @At("HEAD"), cancellable = true)
     private void patcher$openPatcherSettings(ButtonWidget button, CallbackInfo ci) {
-        if (button.active && button.id == 104) {
+        if (button.active && button.id == BUTTON_ID) {
             minecraft.options.save();
             minecraft.openScreen(new PatcherOptionsScreen((OptionsScreen) (Object) this));
             ci.cancel();
