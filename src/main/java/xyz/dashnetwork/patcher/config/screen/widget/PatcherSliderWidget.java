@@ -21,9 +21,7 @@ public class PatcherSliderWidget extends PatcherButtonWidget {
                                Consumer<? super PatcherSliderWidget> clickEvent) {
         super(id, label, tooltip, active, (Consumer<? super PatcherButtonWidget>) clickEvent);
         this.segments = Math.max(2, segments);
-        this.value = initial;
-
-        segmentValue();
+        this.value = initial * (1f / segments);
     }
 
     public int getSegment() {

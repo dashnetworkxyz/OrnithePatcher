@@ -93,6 +93,7 @@
     "bugfixes.render.item.ItemRendererMixin_FixGlint",
     "features.ChatGuiMixin_RemoveChatLogLimit",
     "features.ChatScreenMixin_ExtendedChatLength",
+    "features.GameGuiMixin_PumpkinOverlayOpacity",
     "features.GameGuiMixin_RemoveScoreboardNumbers",
     "features.GameRendererMixin_CameraPerspective",
     "features.ItemInHandRendererMixin_RemoveWaterOverlay",

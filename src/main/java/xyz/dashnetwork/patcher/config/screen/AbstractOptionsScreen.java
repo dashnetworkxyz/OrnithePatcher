@@ -83,15 +83,27 @@ public abstract class AbstractOptionsScreen extends Screen {
         );
     }
 
-    protected void addRange(String label, String tooltip, int min, int max, boolean active, AtomicInteger atomic) {
+    protected void addRange(Supplier<String> label, String tooltip, int min, int max, boolean active, AtomicInteger atomic) {
         addSlider(
-                () -> label + ": " + atomic.get(),
+                label,
                 tooltip,
                 max - min + 1,
-                atomic.get() - 1,
+                atomic.get() - min,
                 active,
-                in -> atomic.set(in + 1)
+                segment -> atomic.set(segment + min)
         );
+    }
+
+    protected void addRange(Supplier<String> label, String tooltip, int min, int max, AtomicInteger atomic) {
+        addRange(label, tooltip, min, max, true, atomic);
+    }
+
+    protected void addRange(String label, String tooltip, int min, int max, boolean active, AtomicInteger atomic) {
+        addRange(() -> label + ": " + atomic.get(), tooltip, min, max, active, atomic);
+    }
+
+    protected void addRange(String label, String tooltip, int min, int max, AtomicInteger atomic) {
+        addRange(label, tooltip, min, max, true, atomic);
     }
 
     private void renderTooltip(int mouseX, int mouseY) {

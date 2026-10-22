@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(RenderChunk.class)
-public class RenderChunkMixin_OptimizeBlockEntities {
+public class RenderChunkMixin_OptimizeBlockEntities { // TODO: fix
 
     @Unique
     private BlockEntityRenderer<BlockEntity> patcher$blockEntityRenderer;

@@ -15,6 +15,7 @@ public class ConfigOptions {
     public final AtomicBoolean scoreboardNumbers = new AtomicBoolean(true);
     public final AtomicBoolean betterCamera = new AtomicBoolean(true);
     public final AtomicInteger extendedChatLength = new AtomicInteger(1); // AUTO
+    public final AtomicInteger pumpkinOverlayOpacity = new AtomicInteger(100);
 
     // Performance
     public final AtomicBoolean batchModelRendering = new AtomicBoolean(false);

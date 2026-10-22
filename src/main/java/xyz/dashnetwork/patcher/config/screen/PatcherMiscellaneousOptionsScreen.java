@@ -23,6 +23,10 @@ public class PatcherMiscellaneousOptionsScreen extends AbstractOptionsScreen {
                 Stop tall grass, plants, etc. from affecting
                 your FOV as done in 1.14+.
                 """, options().betterCamera);
+        addRange(() -> "Pumpkin Overlay: " + options().pumpkinOverlayOpacity + "%", """
+                Sets the opacity of the pumpkin overlay
+                when a pumpkin is on your head.
+                """, 0, 100, options().pumpkinOverlayOpacity);
     }
 
 }
