@@ -83,6 +83,17 @@ public abstract class AbstractOptionsScreen extends Screen {
         );
     }
 
+    protected void addRange(String label, String tooltip, int min, int max, boolean active, AtomicInteger atomic) {
+        addSlider(
+                () -> label + ": " + atomic.get(),
+                tooltip,
+                max - min + 1,
+                atomic.get() - 1,
+                active,
+                in -> atomic.set(in + 1)
+        );
+    }
+
     private void renderTooltip(int mouseX, int mouseY) {
         if (MathHelper.abs(mouseX - lastMouseX) > 5 || MathHelper.abs(mouseY - lastMouseY) > 5) {
             mouseStillTime = System.currentTimeMillis();

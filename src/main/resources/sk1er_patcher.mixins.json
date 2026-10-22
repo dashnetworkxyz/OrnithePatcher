@@ -103,7 +103,6 @@
     "performance.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping",
     "performance.ModelPartMixin_BatchDraw",
     "performance.PolygonMixin_BatchDraw",
-    "performance.RenderChunkMixin_OptimizeBlockEntities",
     "performance.TextureManagerMixin_MemoryLeak",
     "performance.network.ClientPlayNetworkHandlerMixin_InstantDimensionSwapping"
   ]

@@ -3,6 +3,8 @@ package xyz.dashnetwork.patcher.config.screen;
 import net.minecraft.client.gui.screen.Screen;
 import xyz.dashnetwork.patcher.Patcher;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class PatcherOptionsScreen extends AbstractOptionsScreen {
 
     public PatcherOptionsScreen(Screen parent) {
